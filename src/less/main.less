@@ -90,29 +90,33 @@ body {
   right: 0;
 }
 
-.andrz-nonnav, .andrz-nav {
-  transition: transform 1s;
+.andrz-nav-anim {
+  transition: transform 0.5s;
 }
 
-body {
-  overflow-x: hidden;
+html.andrz-uses-nav {
+  height: 100%;
+  body {
+    overflow-x: hidden;
+  }
 }
 
-body.andrz-nav-out .andrz-nonnav {
+.andrz-nav-anim {
+  min-height: 100%;
+}
+
+html.andrz-uses-nav body.andrz-nav-out .andrz-nav-anim {
   transform: translate3d(-1 * @andrz-nav-width,0,0);
-}
-
-body.andrz-nav-out .andrz-nav {
-  transform: translate3d(0,0,0);
 }
 
 .andrz-nav {
   position: absolute;
-  right: 0;
+  right: -1 * @andrz-nav-width;
   top: 0;
   bottom: 0;
-  transform: translate3d(@andrz-nav-width,0,0);
   width: @andrz-nav-width;
+
+  background: rgba(0,0,0,0.2);
 }
 
 .andrz-nav a {
@@ -121,8 +125,9 @@ body.andrz-nav-out .andrz-nav {
 
 
 .andrz-masthead {
-  position: relative;
-  z-index: 1;
+  margin-top: 100px;
+  // position: relative;
+  // z-index: 1;
   text-align: center;
   color: white;
 }
@@ -130,7 +135,6 @@ body.andrz-nav-out .andrz-nav {
 .andrz-masthead-center {
   position: relative;
   margin: auto;
-  margin-top: 40px;
   width: 400px;
   max-width: 100%;
 }

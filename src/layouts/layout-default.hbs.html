@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js andrz-page-home" lang="">
+<html class="no-js andrz-page-home andrz-uses-nav" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -70,6 +70,7 @@
         <div class="andrz-bg-image"></div>
         <div class="andrz-bg-overlay"></div>
 
+
         <!--
         <header role="banner">
           <div class="container-fluid">
@@ -79,8 +80,9 @@
           </div>
         </header>
         -->
-        <div class="andrz-nonnav">
-          <button type="button" class="andrz-nav-toggle" onclick="$('body').toggleClass('andrz-nav-out')">
+
+        <div class="andrz-nav-anim">
+          <button type="button" class="andrz-nav-toggle" onmouseenter="$('body').toggleClass('andrz-nav-out')">
             MENU <span class="glyphicon glyphicon-hamburger-menu"></span>
           </button>
 
@@ -89,26 +91,21 @@
               {{> body }}
             </main>
           </div>
+
+          <nav class="andrz-nav">
+            <ul class="list-unstyled" role="menu">
+              {{#each social}}
+                <li>
+                  <a href="{{url}}" target="_blank">
+                    {{name}}
+                  </a>
+                </li>
+              {{/each}}
+              <!-- <li class="divider"></li> -->
+            </ul>
+          </nav>
         </div>
 
-        <nav class="andrz-nav">
-          <ul role="menu">
-            {{#each social}}
-              <li>
-                <a href="{{url}}" target="_blank">
-                  {{name}}
-                </a>
-              </li>
-            {{/each}}
-            <!-- <li class="divider"></li> -->
-          </ul>
-        </nav>
-
-        <!--
-        <footer>
-          Footer
-        </footer>
-        -->
 
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
