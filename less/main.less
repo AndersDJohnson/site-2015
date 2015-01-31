@@ -1,28 +1,45 @@
 @import "bower_components/bootstrap/less/bootstrap";
 @import (inline) "bower_components/animate.css/animate.css";
 
-.navbar.navbar-transparent.navbar-inverse {
-    border-width: 0px;
-    -webkit-box-shadow: 0px 0px;
-    box-shadow: 0px 0px;
-    background-color: rgba(0,0,0,0.0);
-    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
-    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-}
-.navbar.navbar-transparent.navbar-inverse .navbar-toggle {
-  border: 0;
-}
+@import "navbar-transparent";
 
 /**
  * For Bootstrap's ".navbar-fixed-top".
  */
-body { padding-top: 70px; }
+.container-main { padding-top: 70px; }
+
+html {
+  // min-height: 100%;
+  // height: 100%;
+}
 
 body {
-  background: teal;
   min-height: 2000px;
+  height: 100%;
+  background-color: #444;
 }
+
+.andrz-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  // background-image: url("https://unsplash.imgix.net/photo-1418226970361-9f1f7227d638?q=75&w=1080&h=1080&fit=max&fm=jpg&s=7a3e301155d0e1a78e5c1f03420b384e");
+  // background-image: url("https://unsplash.imgix.net/photo-1417444900330-dc44c79af021?q=75&fm=jpg&s=691e51ea2e210a16c23294a029752141");
+  // splash shore
+  background-image: url("https://ununsplash.imgix.net/photo-1413913619092-816734eed3a7?q=75&fm=jpg&s=7653dd05ea22b7546a416b360b9d3bdd");
+  // pebbles
+  // background-image: url("https://ununsplash.imgix.net/uploads/141202616623001715bb7/c1b3b9b0?q=75&fm=jpg&s=07faf9fb6409579bda59881970b284d1");
+}
+
+.andrz-bg-shade {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: teal;
+  background: rgba(0,128,128,0.5);
+}
+
 
 .andrz-nav a {
   color: white;
@@ -31,13 +48,20 @@ body {
 .andrz-page-home .andrz-logo {
   display: block;
   margin: auto;
-  width: 400px;
+  width: 512px;
   max-width: 100%;
   margin-top: 100px;
 }
 
 .andrz-masthead {
+  position: relative;
+  z-index: 1;
   text-align: center;
   color: white;
+}
+
+.andrz-masthead-image {
+  position: relative;
+  margin: 12px 0;
 }
 
