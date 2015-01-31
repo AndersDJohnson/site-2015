@@ -70,95 +70,23 @@
         <div class="andrz-bg-image"></div>
         <div class="andrz-bg-overlay"></div>
 
+        <!--
         <header role="banner">
-          <nav class="navbar navbar-fixed-top navbar-static-top navbar-transparent navbar-inverse">
-            <div class="container">
-              <div class="navbar-header">
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-
-                <!--
-                <a class="navbar-brand" href="#">
-                  Anders D. Johnson
-                </a>
-                -->
-              </div>
-
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-
-                  <!--
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Work</a></li>
-                  <li><a href="#">Résumé</a></li>
-                  -->
-
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                      Connect <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" role="menu">
-                      
-                        <li>
-                          <a href="http://www.google.com/recaptcha/mailhide/d?k=016Hxt_X0bNon_-7v9lYYJ6A==&amp;c=eIwgvd7-19GfJXTqKuG5gADRgTxRMhc8jm_JGgdqvA8=" target="_blank">
-                            Email
-                          </a>
-                        </li>
-                      
-                        <li>
-                          <a href="tel:612-581-2003" target="_blank">
-                            Phone
-                          </a>
-                        </li>
-                      
-                        <li>
-                          <a href="https://www.linkedin.com/pub/anders-johnson/18/822/446" target="_blank">
-                            LinkedIn
-                          </a>
-                        </li>
-                      
-                        <li>
-                          <a href="https://github.com/AndersDJohnson" target="_blank">
-                            GitHub
-                          </a>
-                        </li>
-                      
-                        <li>
-                          <a href="https://twitter.com/AndersDJohnson" target="_blank">
-                            Twitter
-                          </a>
-                        </li>
-                      
-                        <li>
-                          <a href="http://stackoverflow.com/users/851135/AndersDJohnson" target="_blank">
-                            Stack Overflow
-                          </a>
-                        </li>
-                      
-                        <li>
-                          <a href="https://keybase.io/AndersDJohnson" target="_blank">
-                            Keybase
-                          </a>
-                        </li>
-                      
-                      <!-- <li class="divider"></li> -->
-                    </ul>
-                  </li>
-
-                </ul>
-              </div><!-- /.navbar-collapse -->
-            </div>
-          </nav>
+          <div class="container-fluid">
+            <button type="button" class="">
+              MENU <span class="glyphicon glyphicon-hamburger-menu"></span>
+            </button>
+          </div>
         </header>
+        -->
+        <div class="andrz-nonnav">
+          <button type="button" class="andrz-nav-toggle" onclick="$('body').toggleClass('andrz-nav-out')">
+            MENU <span class="glyphicon glyphicon-hamburger-menu"></span>
+          </button>
 
-        <div class="container container-main">
-          <main>
-            
+          <div class="container-fluid andrz-container-main">
+            <main>
+              
 <div class="andrz-masthead animated bounceInDown">
   <div class="andrz-masthead-center">
     <div class="andrz-masthead-image">
@@ -176,8 +104,58 @@
   -->
 </div>
 
-          </main>
+            </main>
+          </div>
         </div>
+
+        <nav class="andrz-nav">
+          <ul role="menu">
+            
+              <li>
+                <a href="http://www.google.com/recaptcha/mailhide/d?k=016Hxt_X0bNon_-7v9lYYJ6A==&amp;c=eIwgvd7-19GfJXTqKuG5gADRgTxRMhc8jm_JGgdqvA8=" target="_blank">
+                  Email
+                </a>
+              </li>
+            
+              <li>
+                <a href="tel:612-581-2003" target="_blank">
+                  Phone
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://www.linkedin.com/pub/anders-johnson/18/822/446" target="_blank">
+                  LinkedIn
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/AndersDJohnson" target="_blank">
+                  GitHub
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://twitter.com/AndersDJohnson" target="_blank">
+                  Twitter
+                </a>
+              </li>
+            
+              <li>
+                <a href="http://stackoverflow.com/users/851135/AndersDJohnson" target="_blank">
+                  Stack Overflow
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://keybase.io/AndersDJohnson" target="_blank">
+                  Keybase
+                </a>
+              </li>
+            
+            <!-- <li class="divider"></li> -->
+          </ul>
+        </nav>
 
         <!--
         <footer>

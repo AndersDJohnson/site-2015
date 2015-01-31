@@ -1,5 +1,5 @@
 @import "../../public/bower_components/bootstrap/less/bootstrap";
-@import (inline) "../../public/bower_components/animate.css/animate.css";
+@import (less) "../../public/bower_components/animate.css/animate.css";
 
 @import "navbar-transparent";
 
@@ -12,6 +12,8 @@ html {
   // min-height: 100%;
   // height: 100%;
 }
+
+@andrz-nav-width: 260px;
 
 @andrz-bg-color: teal;
 @andrz-bg-color-overlay: darken(@andrz-bg-color, 15%);
@@ -79,6 +81,38 @@ body {
 
 .navbar-brand {
   // text-transform: uppercase;
+}
+
+
+.andrz-nav-toggle {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.andrz-nonnav, .andrz-nav {
+  transition: transform 1s;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body.andrz-nav-out .andrz-nonnav {
+  transform: translate3d(-1 * @andrz-nav-width,0,0);
+}
+
+body.andrz-nav-out .andrz-nav {
+  transform: translate3d(0,0,0);
+}
+
+.andrz-nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(@andrz-nav-width,0,0);
+  width: @andrz-nav-width;
 }
 
 .andrz-nav a {
