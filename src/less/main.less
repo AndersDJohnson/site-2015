@@ -13,12 +13,26 @@ html {
   // height: 100%;
 }
 
-@andrz-bg-shade-color: darken(teal, 20%);
+@andrz-bg-color: teal;
+@andrz-bg-color-overlay: darken(@andrz-bg-color, 15%);
 
 body {
   // min-height: 2000px;
   height: 100%;
-  background-color: lighten( desaturate( @andrz-bg-shade-color, 60%), 20% );
+  // background-color: lighten( desaturate( @andrz-bg-color-overlay, 60%), 20% );
+  // background-color: @andrz-bg-color;
+  background-color: gray;
+}
+
+.andrz-bg-fill{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 .andrz-bg-fixed {
@@ -32,7 +46,7 @@ body {
   z-index: -1;
 }
 
-.andrz-bg {
+.andrz-bg-image {
   .andrz-bg-fixed;
   background-position: center top;
   background-size: cover;
@@ -44,12 +58,23 @@ body {
   background-image: url("https://ununsplash.imgix.net/photo-1413913619092-816734eed3a7?q=75&fm=jpg&s=7653dd05ea22b7546a416b360b9d3bdd");
   // pebbles
   // background-image: url("https://ununsplash.imgix.net/uploads/141202616623001715bb7/c1b3b9b0?q=75&fm=jpg&s=07faf9fb6409579bda59881970b284d1");
+  animation: andrz-bg-image 5s;
 }
 
-.andrz-bg-shade {
+.andrz-bg-overlay {
   .andrz-bg-fixed;
-  background: teal;
-  background: fade( @andrz-bg-shade-color, 67% );
+  background-color: @andrz-bg-color-overlay;
+  opacity: 0.5;
+  animation: andrz-bg-overlay 5s;
+}
+
+@keyframes andrz-bg-overlay {
+  0%   { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+@keyframes andrz-bg-image {
+  0%   { -webkit-filter: blur(10px); }
+  100% { -webkit-filter: blur(0px); }
 }
 
 .navbar-brand {
@@ -60,13 +85,6 @@ body {
   color: white;
 }
 
-.andrz-page-home .andrz-logo {
-  display: block;
-  margin: auto;
-  width: 400px;
-  max-width: 100%;
-  margin-top: 40px;
-}
 
 .andrz-masthead {
   position: relative;
@@ -75,8 +93,41 @@ body {
   color: white;
 }
 
-.andrz-masthead-image {
+.andrz-masthead-center {
   position: relative;
-  margin: 12px 0;
+  margin: auto;
+  margin-top: 40px;
+  width: 400px;
+  max-width: 100%;
 }
 
+.andrz-masthead-image {
+  position: relative;
+}
+
+.andrz-masthead-logo {
+  display: block;
+  width: 100%;
+}
+
+// .andrz-masthead-image-shadow {
+//   box-shadow: 0 0 175px 175px rgba(0,0,0,0.5);
+//   width: 1%;
+//   // max-width: 100%;
+//   background: rgba(0,0,0,0.5);
+//   height: 1%;
+//   position: absolute;
+//   top: 60%;
+//   left: 50%;
+//   z-index: -1;
+//   border-radius: 50%;
+// }
+
+// .andrz-masthead-image-shadow {
+//   .andrz-bg-fill;
+//   background: radial-gradient(rgba(0,0,0,0.8), transparent 67%);
+// }
+
+.andrz-masthead-heading {
+  text-shadow: 0 0 4px rgba(0,0,0,0.8);
+}
