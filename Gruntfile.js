@@ -8,6 +8,11 @@ module.exports = function (grunt) {
 
     less: {
       dev: {
+        options: {
+          sourceMap: true,
+          dumpLineNumbers: 'all',
+          ieCompat: true
+        },
         files: [
           {
             expand: true,
