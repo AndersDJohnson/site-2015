@@ -1,0 +1,28 @@
+email:
+  name: Email
+  url: http://www.google.com/recaptcha/mailhide/d?k=016Hxt_X0bNon_-7v9lYYJ6A==&c=eIwgvd7-19GfJXTqKuG5gADRgTxRMhc8jm_JGgdqvA8=
+  icon: envelope
+phone:
+  name: Phone
+  url: tel:612-581-2003
+  icon: phone
+linkedin:
+  name: LinkedIn
+  url: https://www.linkedin.com/pub/anders-johnson/18/822/446
+  icon: linkedin
+github:
+  name: GitHub
+  url: https://github.com/AndersDJohnson
+  icon: github
+twitter:
+  name: Twitter
+  url: https://twitter.com/AndersDJohnson
+  icon: twitter
+stackoverflow:
+  name: Stack Overflow
+  url: http://stackoverflow.com/users/851135/AndersDJohnson
+  icon: stack-overflow
+keybase:
+  name: Keybase
+  url: https://keybase.io/AndersDJohnson
+  icon: key

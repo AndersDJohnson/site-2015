@@ -1,5 +1,5 @@
-@import "bower_components/bootstrap/less/bootstrap";
-@import (inline) "bower_components/animate.css/animate.css";
+@import "../../public/bower_components/bootstrap/less/bootstrap";
+@import (inline) "../../public/bower_components/animate.css/animate.css";
 
 @import "navbar-transparent";
 
@@ -13,18 +13,32 @@ html {
   // height: 100%;
 }
 
+@andrz-bg-shade-color: darken(teal, 20%);
+
 body {
-  min-height: 2000px;
+  // min-height: 2000px;
   height: 100%;
-  background-color: #444;
+  background-color: lighten( desaturate( @andrz-bg-shade-color, 60%), 20% );
+}
+
+.andrz-bg-fixed {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 .andrz-bg {
-  position: fixed;
-  height: 100%;
-  width: 100%;
+  .andrz-bg-fixed;
+  background-position: center top;
   background-size: cover;
+  // fish
   // background-image: url("https://unsplash.imgix.net/photo-1418226970361-9f1f7227d638?q=75&w=1080&h=1080&fit=max&fm=jpg&s=7a3e301155d0e1a78e5c1f03420b384e");
+  // shore cliff bird's eye
   // background-image: url("https://unsplash.imgix.net/photo-1417444900330-dc44c79af021?q=75&fm=jpg&s=691e51ea2e210a16c23294a029752141");
   // splash shore
   background-image: url("https://ununsplash.imgix.net/photo-1413913619092-816734eed3a7?q=75&fm=jpg&s=7653dd05ea22b7546a416b360b9d3bdd");
@@ -33,13 +47,14 @@ body {
 }
 
 .andrz-bg-shade {
-  position: fixed;
-  height: 100%;
-  width: 100%;
+  .andrz-bg-fixed;
   background: teal;
-  background: rgba(0,128,128,0.5);
+  background: fade( @andrz-bg-shade-color, 67% );
 }
 
+.navbar-brand {
+  // text-transform: uppercase;
+}
 
 .andrz-nav a {
   color: white;
@@ -48,9 +63,9 @@ body {
 .andrz-page-home .andrz-logo {
   display: block;
   margin: auto;
-  width: 512px;
+  width: 400px;
   max-width: 100%;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 
 .andrz-masthead {

@@ -1,0 +1,12 @@
+blog:
+  name: Blog
+  url: /blog/
+  icon: pencil
+work:
+  name: Work
+  url: /work/
+  icon: book
+resume:
+  name: Résumé
+  url: /resume/
+  icon: briefcase
