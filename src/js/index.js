@@ -12,10 +12,12 @@ $(function () {
 
   var nonNavSelector = '.andrz-nonnav';
   var navToggleSelector = '.andrz-nav-toggle';
+  var navCloseSelector = '.andrz-nav-close';
 
   var $navRoot =$('html');
   var $nonNav = $(nonNavSelector);
   var $navToggle = $(navToggleSelector);
+  var $navClose = $(navCloseSelector);
 
   // methods
 
@@ -119,6 +121,12 @@ $(function () {
 
   $navToggle.on('click', function (e) {
     navToggle(e);
+
+    return false;
+  });
+
+  $navClose.on('click', function (e) {
+    navClose(e);
 
     return false;
   });

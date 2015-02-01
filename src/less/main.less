@@ -63,16 +63,20 @@ body {
   // text-transform: uppercase;
 }
 
-.andrz-nav-toggle {
+.andrz-nav-control {
   .andrz-button-unstyled;
   display: block;
 
   &, &:link, &:visited, &:hover, &:active {
-    color: white;
     text-decoration: none;
   }
+  &, &:link, &:visited {
+    color: white;
+  }
+  &:hover, &:active {
+    color: gray;
+  }
 
-  position: fixed;
   top: 0;
   padding-top: @andrz-nav-toggle-pad;
 
@@ -93,10 +97,17 @@ body {
   //   .flipInX;
   //   // .bounceIn;
   //}
-
 }
 
-.andrz-nav-toggle-icon {
+.andrz-nav-toggle {
+  position: fixed;
+}
+
+.andrz-nav-close {
+  position: absolute;
+}
+
+.andrz-nav-control-icon {
   font-size: 24px;
   line-height: 24px;
   height: 24px;
@@ -115,10 +126,10 @@ body {
 
 html.andrz-nav-opened {
   .andrz-nav-toggle-opened {
-    display: block;
+    display: none;
   }
   .andrz-nav-toggle-closed {
-    display: none;
+    // display: none;
   }
 }
 
@@ -151,8 +162,8 @@ html.andrz-uses-nav {
   top: 0;
   bottom: 0;
   width: @andrz-nav-width;
-  background: fade(@andrz-bg-color-overlay, 50%);
-  padding: 16px 0;
+
+  padding: (40px + 16px) 0;
 
   html.andrz-uses-nav-left & {
     left: -1 * @andrz-nav-width;
@@ -160,6 +171,8 @@ html.andrz-uses-nav {
   html.andrz-uses-nav-right & {
     right: -1 * @andrz-nav-width;
   }
+
+  background: fade(@andrz-bg-color-overlay, 50%);
 }
 
 .andrz-nav-list-item {
