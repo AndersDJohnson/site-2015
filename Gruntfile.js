@@ -83,6 +83,16 @@ module.exports = function (grunt) {
         ],
         tasks: ['dev']
       }
+    },
+
+    connect: {
+      dev: {
+        options: {
+          port: 2112,
+          base: 'public',
+          keepalive: true
+        }
+      }
     }
 
   });

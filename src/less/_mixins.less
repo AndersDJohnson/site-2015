@@ -1,0 +1,39 @@
+
+.andrz-bg-fill() {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.andrz-bg-fixed() {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.andrz-button-unstyled() {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-radius: 0;
+    border-color: transparent;
+    outline: 0;
+    background-image: none;
+    background-color: transparent;
+    .box-shadow(none);
+    font-weight: normal;
+    border-radius: 0;
+    text-decoration: none;
+  }
+}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js andrz-page-home andrz-uses-nav" lang="">
+<html class="no-js andrz-page-home andrz-uses-nav andrz-uses-nav-right" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,8 +62,8 @@
         <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
         -->
 
-        <link rel="stylesheet" href="css/main.less.css">
-        <script src="bower_components/modernizr/modernizr.js"></script>
+        <link rel="stylesheet" href="/css/main.less.css">
+        <script src="/bower_components/modernizr/modernizr.js"></script>
     </head>
     <body>
 
@@ -82,13 +82,16 @@
         -->
 
         <div class="andrz-nav-anim">
-          <button type="button" class="andrz-nav-toggle" onmouseenter="$('body').toggleClass('andrz-nav-out')">
-            MENU <span class="glyphicon glyphicon-hamburger-menu"></span>
-          </button>
 
-          <div class="container-fluid andrz-container-main">
-            <main>
-              
+          <div class="andrz-nonnav">
+            <button type="button" class="andrz-nav-toggle">
+              <span class="andrz-nav-toggle-icon andrz-nav-toggle-closed glyphicon glyphicon-menu-hamburger"></span>
+              <span class="andrz-nav-toggle-icon andrz-nav-toggle-opened glyphicon glyphicon-remove"></span>
+            </button>
+
+            <div class="container-fluid andrz-container-main">
+              <main>
+                
 <div class="andrz-masthead animated bounceInDown">
   <div class="andrz-masthead-center">
     <div class="andrz-masthead-image">
@@ -106,62 +109,101 @@
   -->
 </div>
 
-            </main>
+              </main>
+            </div>
           </div>
 
           <nav class="andrz-nav">
+
             <ul class="list-unstyled" role="menu">
               
                 <li>
-                  <a href="http://www.google.com/recaptcha/mailhide/d?k=016Hxt_X0bNon_-7v9lYYJ6A==&amp;c=eIwgvd7-19GfJXTqKuG5gADRgTxRMhc8jm_JGgdqvA8=" target="_blank">
-                    Email
+                  <a href="http://www.google.com/recaptcha/mailhide/d?k=016Hxt_X0bNon_-7v9lYYJ6A==&amp;c=eIwgvd7-19GfJXTqKuG5gADRgTxRMhc8jm_JGgdqvA8=" target="_blank" class="media">
+                    <div class="media-left">
+                      <span class="fa fa-envelope"></span>
+                    </div>
+                    <div class="media-body">
+                      Email
+                    </div>
                   </a>
                 </li>
               
                 <li>
-                  <a href="tel:612-581-2003" target="_blank">
-                    Phone
+                  <a href="tel:612-581-2003" target="_blank" class="media">
+                    <div class="media-left">
+                      <span class="fa fa-phone"></span>
+                    </div>
+                    <div class="media-body">
+                      Phone
+                    </div>
                   </a>
                 </li>
               
                 <li>
-                  <a href="https://www.linkedin.com/pub/anders-johnson/18/822/446" target="_blank">
-                    LinkedIn
+                  <a href="https://www.linkedin.com/pub/anders-johnson/18/822/446" target="_blank" class="media">
+                    <div class="media-left">
+                      <span class="fa fa-linkedin"></span>
+                    </div>
+                    <div class="media-body">
+                      LinkedIn
+                    </div>
                   </a>
                 </li>
               
                 <li>
-                  <a href="https://github.com/AndersDJohnson" target="_blank">
-                    GitHub
+                  <a href="https://github.com/AndersDJohnson" target="_blank" class="media">
+                    <div class="media-left">
+                      <span class="fa fa-github"></span>
+                    </div>
+                    <div class="media-body">
+                      GitHub
+                    </div>
                   </a>
                 </li>
               
                 <li>
-                  <a href="https://twitter.com/AndersDJohnson" target="_blank">
-                    Twitter
+                  <a href="https://twitter.com/AndersDJohnson" target="_blank" class="media">
+                    <div class="media-left">
+                      <span class="fa fa-twitter"></span>
+                    </div>
+                    <div class="media-body">
+                      Twitter
+                    </div>
                   </a>
                 </li>
               
                 <li>
-                  <a href="http://stackoverflow.com/users/851135/AndersDJohnson" target="_blank">
-                    Stack Overflow
+                  <a href="http://stackoverflow.com/users/851135/AndersDJohnson" target="_blank" class="media">
+                    <div class="media-left">
+                      <span class="fa fa-stack-overflow"></span>
+                    </div>
+                    <div class="media-body">
+                      Stack Overflow
+                    </div>
                   </a>
                 </li>
               
                 <li>
-                  <a href="https://keybase.io/AndersDJohnson" target="_blank">
-                    Keybase
+                  <a href="https://keybase.io/AndersDJohnson" target="_blank" class="media">
+                    <div class="media-left">
+                      <span class="fa fa-key"></span>
+                    </div>
+                    <div class="media-body">
+                      Keybase
+                    </div>
                   </a>
                 </li>
               
-              <!-- <li class="divider"></li> -->
             </ul>
           </nav>
         </div>
 
 
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/jquery-dotimeout/jquery.ba-dotimeout.js"></script>
+        <script src="/bower_components/jquery-hoverIntent/jquery.hoverIntent.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/js/index.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <!--

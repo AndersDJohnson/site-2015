@@ -1,6 +1,13 @@
 @import "../../public/bower_components/bootstrap/less/bootstrap";
+@icon-font-path: "/bower_components/bootstrap/fonts/";
+
+@import "../../public/bower_components/font-awesome/less/font-awesome.less";
+@fa-font-path: "/bower_components/font-awesome/fonts/";
+
 @import (less) "../../public/bower_components/animate.css/animate.css";
 
+@import "_variables";
+@import "_mixins";
 @import "navbar-transparent";
 
 /**
@@ -13,39 +20,12 @@ html {
   // height: 100%;
 }
 
-@andrz-nav-width: 260px;
-
-@andrz-bg-color: teal;
-@andrz-bg-color-overlay: darken(@andrz-bg-color, 15%);
-
 body {
   // min-height: 2000px;
   height: 100%;
   // background-color: lighten( desaturate( @andrz-bg-color-overlay, 60%), 20% );
   // background-color: @andrz-bg-color;
   background-color: gray;
-}
-
-.andrz-bg-fill{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-}
-
-.andrz-bg-fixed {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
 }
 
 .andrz-bg-image {
@@ -83,11 +63,38 @@ body {
   // text-transform: uppercase;
 }
 
-
 .andrz-nav-toggle {
+  .andrz-button-unstyled;
+
+  color: white;
+
   position: fixed;
-  top: 0;
-  right: 0;
+  top: @andrz-nav-toggle-pad;
+
+  html.andrz-uses-nav-left & {
+    left: @andrz-nav-toggle-pad;
+  }
+  html.andrz-uses-nav-right & {
+    right: @andrz-nav-toggle-pad;
+  }
+
+}
+
+.andrz-nav-toggle-icon {
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+}
+.andrz-nav-toggle-opened {
+  display: none;
+}
+html.andrz-nav-opened {
+  .andrz-nav-toggle-opened {
+    display: block;
+  }
+  .andrz-nav-toggle-closed {
+    display: none;
+  }
 }
 
 .andrz-nav-anim {
@@ -103,26 +110,33 @@ html.andrz-uses-nav {
 
 .andrz-nav-anim {
   min-height: 100%;
-}
 
-html.andrz-uses-nav body.andrz-nav-out .andrz-nav-anim {
-  transform: translate3d(-1 * @andrz-nav-width,0,0);
+  html.andrz-uses-nav-right.andrz-nav-opened & {
+    transform: translate3d(-1 * @andrz-nav-width,0,0);
+  }
+  html.andrz-uses-nav-left.andrz-nav-opened & {
+    transform: translate3d(@andrz-nav-width,0,0);
+  }
 }
 
 .andrz-nav {
   position: absolute;
-  right: -1 * @andrz-nav-width;
   top: 0;
   bottom: 0;
   width: @andrz-nav-width;
-
   background: rgba(0,0,0,0.2);
+
+  html.andrz-uses-nav-left & {
+    left: -1 * @andrz-nav-width;
+  }
+  html.andrz-uses-nav-right & {
+    right: -1 * @andrz-nav-width;
+  }
 }
 
 .andrz-nav a {
   color: white;
 }
-
 
 .andrz-masthead {
   margin-top: 100px;
