@@ -65,19 +65,6 @@
 
         <div class="andrz-nav-anim">
 
-          <div class="andrz-nonnav">
-            <a class="andrz-nav-toggle">
-              <span class="andrz-nav-toggle-icon andrz-nav-toggle-closed glyphicon glyphicon-menu-hamburger"></span>
-              <span class="andrz-nav-toggle-icon andrz-nav-toggle-opened glyphicon glyphicon-chevron-right"></span>
-            </a>
-
-            <div class="container-fluid andrz-container-main">
-              <main>
-                {{> body }}
-              </main>
-            </div>
-          </div>
-
           <nav class="andrz-nav">
 
             <ul class="list-unstyled andrz-nav-list" role="menu">
@@ -91,6 +78,22 @@
               {{/each}}
             </ul>
           </nav>
+
+          <div class="andrz-nonnav">
+
+            <a class="andrz-nav-toggle">
+              <span class="andrz-nav-toggle-icon andrz-nav-toggle-closed glyphicon glyphicon-menu-hamburger"></span>
+              <span class="andrz-nav-toggle-icon andrz-nav-toggle-opened glyphicon glyphicon-chevron-right"></span>
+            </a>
+
+            <div class="container-fluid andrz-container-main">
+              <main>
+                {{> body }}
+              </main>
+            </div>
+
+          </div>
+
         </div>
 
 
