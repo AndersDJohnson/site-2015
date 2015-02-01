@@ -9,6 +9,7 @@ $(function () {
   var isHoverOutsideCloseEnabled = true;
   var navOpenTimeout = 250;
   var navCloseTimeout = 600;
+  var blockTime = 750;
 
   //// selectors
 
@@ -23,11 +24,19 @@ $(function () {
   var $navToggle = $(navToggleSelector);
   var $navClose = $(navCloseSelector);
 
+  var lastStartTime;
+
   // methods
 
   //// close
 
   var navClose = function (e) {
+    var thisTime = (new Date()).getTime();
+    if (lastStartTime && lastStartTime + blockTime > thisTime ) {
+      return;
+    }
+    lastStartTime = thisTime;
+
     $navRoot.removeClass('andrz-nav-opened');
 
     if (isHoverOutsideCloseEnabled) {
@@ -62,6 +71,12 @@ $(function () {
   //// open
 
   var navOpen = function (e) {
+    var thisTime = (new Date()).getTime();
+    if (lastStartTime && lastStartTime + blockTime > thisTime ) {
+      return;
+    }
+    lastStartTime = thisTime;
+
     $navRoot.addClass('andrz-nav-opened');
 
     if (isHoverOutsideCloseEnabled) {
