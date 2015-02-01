@@ -1,3 +1,11 @@
+home:
+  name: Home
+  url: /
+  icon: home
+profile:
+  name: Profile
+  url: /profile/
+  icon: user
 blog:
   name: Blog
   url: /blog/

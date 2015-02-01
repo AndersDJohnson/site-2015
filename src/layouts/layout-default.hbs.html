@@ -75,9 +75,20 @@
             -->
 
             <ul class="list-unstyled andrz-nav-list" role="menu">
+              {{#each nav}}
+                <li class="andrz-nav-list-item nav nav-list">
+                  <a href="{{url}}" class="andrz-nav-link">
+                    <span class="andrz-nav-link-icon fa fa-{{icon}}"></span>
+                    <span class="andrz-nav-link-text">{{name}}</span>
+                  </a>
+                </li>
+              {{/each}}
+              <li class="divider" role="presentation">
+                <hr />
+              </li>
               {{#each social}}
                 <li class="andrz-nav-list-item nav nav-list">
-                  <a href="{{url}}" target="_blank" class="media andrz-nav-link">
+                  <a href="{{url}}" target="_blank" class="andrz-nav-link">
                     <span class="andrz-nav-link-icon fa fa-{{icon}}"></span>
                     <span class="andrz-nav-link-text">{{name}}</span>
                   </a>
@@ -94,7 +105,7 @@
             </a>
 
             <main class="andrz-container-main">
-              {{> body }}
+              {{#block "body"}}{{> body }}{{/block}}
             </main>
 
           </div>
