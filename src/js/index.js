@@ -31,8 +31,8 @@ $(function () {
     $navRoot.removeClass('andrz-nav-opened');
 
     if (isHoverOutsideCloseEnabled) {
-      $nav.off('mouseenter', navCloseCancel);
-      $nav.off('mouseleave', navCloseAfterTimeout);
+      $nav.off('mouseover', navCloseCancel);
+      $nav.off('mouseout', navCloseAfterTimeout);
     }
 
     return false;
@@ -56,8 +56,8 @@ $(function () {
     $navRoot.addClass('andrz-nav-opened');
 
     if (isHoverOutsideCloseEnabled) {
-      $nav.on('mouseenter', navCloseCancel);
-      $nav.on('mouseleave', navCloseAfterTimeout);
+      $nav.on('mouseover', navCloseCancel);
+      $nav.on('mouseout', navCloseAfterTimeout);
     }
 
     return false;
@@ -92,7 +92,7 @@ $(function () {
 
   var navToggleAfterTimeout = function (e) {
     var type = e.type;
-    var isHover = type == 'mouseenter';
+    var isHover = type == 'mouseover';
 
     if (navIsOpen()) {
       if (isHover) {
@@ -134,8 +134,8 @@ $(function () {
   //// hover
 
   if (isHoverOpenButtonEnabled) {
-    $navToggle.on('mouseenter', navToggleAfterTimeout);
-    $navToggle.on('mouseleave', navToggleCancel);
+    $navToggle.on('mouseover', navToggleAfterTimeout);
+    $navToggle.on('mouseout', navToggleCancel);
   }
 
   //// click
