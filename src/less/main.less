@@ -21,11 +21,13 @@ body {
   height: 100%;
   // background-color: lighten( desaturate( @andrz-bg-color-overlay, 60%), 20% );
   // background-color: @andrz-bg-color;
-  background-color: gray;
+  // background-color: gray;
 }
 
 .andrz-bg-image {
-  .andrz-bg-fixed;
+  // .andrz-bg-fixed;
+  .andrz-bg-absolute;
+
   background-position: center top;
   background-size: cover;
   // fish
@@ -40,7 +42,9 @@ body {
 }
 
 .andrz-bg-overlay {
-  .andrz-bg-fixed;
+  // .andrz-bg-fixed;
+  .andrz-bg-absolute;
+
   background-color: @andrz-bg-color-overlay;
   opacity: 0.6;
   animation: andrz-bg-overlay 5s;
@@ -61,7 +65,8 @@ body {
 
 .andrz-nav-control {
   .andrz-button-unstyled;
-  display: block;
+
+  text-shadow: 0 0 1px black;
 
   &, &:link, &:visited, &:hover, &:active {
     text-decoration: none;
@@ -73,6 +78,7 @@ body {
     color: gray;
   }
 
+  display: block;
   top: 0;
   padding-top: @andrz-nav-toggle-pad;
 
@@ -139,10 +145,10 @@ html.andrz-uses-nav {
 }
 
 .andrz-nav-anim {
+  height: 100%;
   min-height: 100%;
   position: relative;
   left: 0;
-  right: 0;
 
   transition: left 0.5s;
 
@@ -154,6 +160,9 @@ html.andrz-uses-nav {
   }
 }
 
+.andrz-nonnav {
+  height: 100%;
+}
 
 .andrz-nav {
   position: fixed;
@@ -181,6 +190,10 @@ html.andrz-uses-nav {
 
 .andrz-nav--glass {
   background: fade(@andrz-bg-color-overlay, 50%);
+}
+
+.andrz-nav--dark {
+  background: #222;
 }
 
 .andrz-nav-list-item {
@@ -213,7 +226,12 @@ html.andrz-uses-nav {
   }
 
   .andrz-nav--glass & {
+    &:hover, &:active {
+      background: rgba(0,0,0,0.2);
+    }
+  }
 
+  .andrz-nav--dark & {
     &:hover, &:active {
       background: rgba(0,0,0,0.2);
     }
@@ -237,12 +255,18 @@ html.andrz-uses-nav {
 
 
 .andrz-masthead {
-  margin-top: 100px;
-  margin-bottom: 24px;
+  position: relative; // for image fill
+
+  padding-top: 100px;
+  padding-bottom: 24px;
   // position: relative;
   // z-index: 1;
   text-align: center;
   color: white;
+
+  html.andrz-page-home & {
+    height: 100%;
+  }
 }
 
 .andrz-masthead-center {
@@ -295,10 +319,18 @@ html.andrz-uses-nav {
   text-shadow: 0 0 4px rgba(0,0,0,0.8);
 }
 
-.andrz-page-home main {
-  color: white;
-}
 
 .andrz-lead {
   text-align: center;
+}
+
+
+.andrz-container-main {
+  height: 100%;
+}
+
+
+.andrz-page-body {
+  background: @body-bg;
+  color: @text-color;
 }

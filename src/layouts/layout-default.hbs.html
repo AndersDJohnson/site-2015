@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js andrz-page-home andrz-uses-nav andrz-uses-nav-left" lang="">
+<html class="no-js andrz-page-{{#block "pageClass"}}{{/block}} andrz-uses-nav andrz-uses-nav-left" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,13 +59,14 @@
     </head>
     <body>
 
+        <!--
         <div class="andrz-bg-image"></div>
         <div class="andrz-bg-overlay"></div>
-
+        -->
 
         <div class="andrz-nav-anim">
 
-          <nav class="andrz-nav andrz-nav--invisible">
+          <nav class="andrz-nav andrz-nav--dark">
 
             <!--
             <a class="andrz-nav-control andrz-nav-close">
@@ -92,11 +93,9 @@
               <span class="andrz-nav-control-icon andrz-nav-toggle-icon andrz-nav-toggle-opened glyphicon glyphicon-remove"></span>
             </a>
 
-            <div class="andrz-container-main">
-              <main>
-                {{> body }}
-              </main>
-            </div>
+            <main class="andrz-container-main">
+              {{> body }}
+            </main>
 
           </div>
 
