@@ -144,13 +144,13 @@ html.andrz-uses-nav {
   left: 0;
   right: 0;
 
-  transition: left 0.5s, right 0.5s;
+  transition: left 0.5s;
 
   html.andrz-uses-nav-right.andrz-nav-opened & {
     left: -1 * @andrz-nav-width;
   }
   html.andrz-uses-nav-left.andrz-nav-opened & {
-    right: -1 * @andrz-nav-width;
+    left: @andrz-nav-width;
   }
 }
 
@@ -177,7 +177,9 @@ html.andrz-uses-nav {
   html.andrz-uses-nav-right.andrz-nav-opened & {
     right: 0;
   }
+}
 
+.andrz-nav--glass {
   background: fade(@andrz-bg-color-overlay, 50%);
 }
 
@@ -193,15 +195,27 @@ html.andrz-uses-nav {
     text-decoration: none;
   }
 
-  &:hover, &:active {
-    background: rgba(0,0,0,0.2);
-  }
-
   &:hover {
     .andrz-nav-link-icon {
       .animated;
       .flipInX;
       // .bounceIn;
+    }
+  }
+
+  .andrz-nav--invisible & {
+    html.andrz-uses-nav-right & {
+      text-align: right;
+    }
+    html.andrz-uses-nav-left & {
+      text-align: left;
+    }
+  }
+
+  .andrz-nav--glass & {
+
+    &:hover, &:active {
+      background: rgba(0,0,0,0.2);
     }
   }
 }
@@ -211,7 +225,6 @@ html.andrz-uses-nav {
   line-height: 24px;
   height: 24px;
   width: 24px;
-  margin-right: 8px;
 }
 
 .andrz-nav-link-text {
@@ -219,6 +232,7 @@ html.andrz-uses-nav {
   line-height: 24px;
   height: 24px;
   width: 24px;
+  margin: 0 8px;
 }
 
 
