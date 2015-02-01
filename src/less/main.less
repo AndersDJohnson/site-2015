@@ -104,6 +104,7 @@ body {
 .andrz-nav-toggle {
   position: fixed;
   z-index: 10;
+
 }
 
 .andrz-nav-close {
@@ -125,6 +126,24 @@ body {
 
 .andrz-nav-toggle-opened {
   display: none;
+
+  .animated;
+  .rotateOut;
+
+  html.andrz-nav-opened & {
+    .rotateIn;
+  }
+}
+
+.andrz-nav-toggle-closed {
+  display: block;
+
+  .animated;
+  .rotateIn;
+
+  html.andrz-nav-opened & {
+    .rotateOut;
+  }
 }
 
 html.andrz-nav-opened {
