@@ -10,10 +10,6 @@
 @import "_mixins";
 @import "navbar-transparent";
 
-/**
- * For Bootstrap's ".navbar-fixed-top".
- */
-.container-main { padding-top: 70px; }
 
 html {
   // min-height: 100%;
@@ -101,6 +97,7 @@ body {
 
 .andrz-nav-toggle {
   position: fixed;
+  z-index: 10;
 }
 
 .andrz-nav-close {
@@ -126,17 +123,13 @@ body {
 
 html.andrz-nav-opened {
   .andrz-nav-toggle-opened {
-    display: none;
+    display: block;
   }
   .andrz-nav-toggle-closed {
-    // display: none;
+    display: none;
   }
 }
 
-
-.andrz-nav-anim {
-  transition: transform 0.5s;
-}
 
 html.andrz-uses-nav {
   height: 100%;
@@ -147,29 +140,42 @@ html.andrz-uses-nav {
 
 .andrz-nav-anim {
   min-height: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+
+  transition: left 0.5s, right 0.5s;
 
   html.andrz-uses-nav-right.andrz-nav-opened & {
-    transform: translate3d(-1 * @andrz-nav-width,0,0);
+    left: -1 * @andrz-nav-width;
   }
   html.andrz-uses-nav-left.andrz-nav-opened & {
-    transform: translate3d(@andrz-nav-width,0,0);
+    right: -1 * @andrz-nav-width;
   }
 }
 
 
 .andrz-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
-  width: @andrz-nav-width;
 
   padding: (40px + 16px) 0;
+  width: @andrz-nav-width;
+
+  transition: left 0.5s, right 0.5s;
 
   html.andrz-uses-nav-left & {
     left: -1 * @andrz-nav-width;
   }
+  html.andrz-uses-nav-left.andrz-nav-opened & {
+    left: 0;
+  }
   html.andrz-uses-nav-right & {
     right: -1 * @andrz-nav-width;
+  }
+  html.andrz-uses-nav-right.andrz-nav-opened & {
+    right: 0;
   }
 
   background: fade(@andrz-bg-color-overlay, 50%);
