@@ -32,8 +32,8 @@ $(function () {
 
     if (isHoverOutsideCloseEnabled) {
       $nav.off('mouseenter', navCloseCancel);
-      $nav.off('mouseleave', navCloseAfterTimeout);
-      // $nonNav.off('mousemove', navCloseAfterTimeout);
+      // $nav.off('mouseleave', navCloseAfterTimeout);
+      $nonNav.off('mousemove', navCloseAfterTimeout);
     }
 
     return false;
@@ -41,6 +41,14 @@ $(function () {
 
   var navCloseAfterTimeout = function (e) {
     $(this).doTimeout('nav-close', navCloseTimeout, function () {
+      var $target = $(e.target);
+
+      // if mousemove is on toggle or its children, which might be non-nav,
+      //  bypass the close to prevent immediate close after open via toggle
+      if ($target.closest(navToggleSelector).length) {
+        return;
+      }
+
       navClose(e);
     });
 
@@ -58,8 +66,10 @@ $(function () {
 
     if (isHoverOutsideCloseEnabled) {
       $nav.on('mouseenter', navCloseCancel);
-      $nav.on('mouseleave', navCloseAfterTimeout);
-      // $nonNav.on('mousemove', navCloseAfterTimeout);
+      // switching nav close to non-nav mousemove excluding toggle,
+      //  otherwise mouseleave triggers e.g. on right click or leave window
+      // $nav.on('mouseleave', navCloseAfterTimeout);
+      $nonNav.on('mousemove', navCloseAfterTimeout);
     }
 
     return false;
