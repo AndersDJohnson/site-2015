@@ -12,11 +12,13 @@ $(function () {
 
   //// selectors
 
+  var navSelector = '.andrz-nav';
   var nonNavSelector = '.andrz-nonnav';
   var navToggleSelector = '.andrz-nav-toggle';
   var navCloseSelector = '.andrz-nav-close';
 
   var $navRoot =$('html');
+  var $nav = $(navSelector);
   var $nonNav = $(nonNavSelector);
   var $navToggle = $(navToggleSelector);
   var $navClose = $(navCloseSelector);
@@ -29,8 +31,8 @@ $(function () {
     $navRoot.removeClass('andrz-nav-opened');
 
     if (isHoverOutsideCloseEnabled) {
-      $nonNav.off('mouseenter', navCloseAfterTimeout);
-      $nonNav.off('mouseleave', navCloseCancel);
+      $nav.off('mouseenter', navCloseCancel);
+      $nav.off('mouseleave', navCloseAfterTimeout);
     }
 
     return false;
@@ -54,8 +56,8 @@ $(function () {
     $navRoot.addClass('andrz-nav-opened');
 
     if (isHoverOutsideCloseEnabled) {
-      $nonNav.on('mouseenter', navCloseAfterTimeout);
-      $nonNav.on('mouseleave', navCloseCancel);
+      $nav.on('mouseenter', navCloseCancel);
+      $nav.on('mouseleave', navCloseAfterTimeout);
     }
 
     return false;
