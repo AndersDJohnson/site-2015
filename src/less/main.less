@@ -46,13 +46,13 @@ body {
 .andrz-bg-overlay {
   .andrz-bg-fixed;
   background-color: @andrz-bg-color-overlay;
-  opacity: 0.5;
+  opacity: 0.6;
   animation: andrz-bg-overlay 5s;
 }
 
 @keyframes andrz-bg-overlay {
   0%   { opacity: 1; }
-  100% { opacity: 0.5; }
+  100% { opacity: 0.6; }
 }
 @keyframes andrz-bg-image {
   0%   { -webkit-filter: blur(10px); }
@@ -65,8 +65,12 @@ body {
 
 .andrz-nav-toggle {
   .andrz-button-unstyled;
+  display: block;
 
-  color: white;
+  &, &:link, &:visited, &:hover, &:active {
+    color: white;
+    text-decoration: none;
+  }
 
   position: fixed;
   top: 0;
@@ -75,22 +79,40 @@ body {
   html.andrz-uses-nav-left & {
     left: 0;
     padding-left: @andrz-nav-toggle-pad;
+    padding-right: 0;
   }
   html.andrz-uses-nav-right & {
     right: 0;
     padding-right: @andrz-nav-toggle-pad;
+    padding-left: 0;
   }
+
+  // weird flickering
+  //&:hover {
+  //   .animated;
+  //   .flipInX;
+  //   // .bounceIn;
+  //}
 
 }
 
 .andrz-nav-toggle-icon {
-  height: 24px;
+  font-size: 24px;
   line-height: 24px;
-  font-size: 16px;
+  height: 24px;
+  width: 24px;
 }
+
+.andrz-nav-toggle-text {
+  font-size: 16px;
+  line-height: 24px;
+  height: 24px;
+}
+
 .andrz-nav-toggle-opened {
   display: none;
 }
+
 html.andrz-nav-opened {
   .andrz-nav-toggle-opened {
     display: block;
@@ -99,6 +121,7 @@ html.andrz-nav-opened {
     display: none;
   }
 }
+
 
 .andrz-nav-anim {
   transition: transform 0.5s;
@@ -122,12 +145,14 @@ html.andrz-uses-nav {
   }
 }
 
+
 .andrz-nav {
   position: absolute;
   top: 0;
   bottom: 0;
   width: @andrz-nav-width;
-  background: rgba(0,0,0,0.2);
+  background: fade(darken(@andrz-bg-color-overlay, 15%), 50%);
+  padding: 16px 0;
 
   html.andrz-uses-nav-left & {
     left: -1 * @andrz-nav-width;
@@ -137,9 +162,46 @@ html.andrz-uses-nav {
   }
 }
 
-.andrz-nav a {
-  color: white;
+.andrz-nav-list-item {
 }
+
+.andrz-nav-link {
+  display: block;
+  padding: 8px 16px;
+
+  &, &:link, &:visited, &:hover, &:active {
+    color: white;
+    text-decoration: none;
+  }
+
+  &:hover, &:active {
+    background: rgba(0,0,0,0.2);
+  }
+
+  &:hover {
+    .andrz-nav-link-icon {
+      .animated;
+      .flipInX;
+      // .bounceIn;
+    }
+  }
+}
+
+.andrz-nav-link-icon {
+  font-size: 24px;
+  line-height: 24px;
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+}
+
+.andrz-nav-link-text {
+  font-size: 16px;
+  line-height: 24px;
+  height: 24px;
+  width: 24px;
+}
+
 
 .andrz-masthead {
   margin-top: 100px;
@@ -154,6 +216,18 @@ html.andrz-uses-nav {
   margin: auto;
   width: 400px;
   max-width: 100%;
+
+  &:hover {
+    .animated;
+    // .tada;
+    // .flipInX;
+    // .bounceIn;
+    // .rubberBand;
+    // .swing;
+    // .shake;
+    // .bounce;
+    .pulse;
+  }
 }
 
 .andrz-masthead-image {

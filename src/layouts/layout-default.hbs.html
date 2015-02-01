@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta http-equiv="cleartype" content="on">
+
         <title>{{#block "title"}}Title{{/block}}</title>
+
         <meta name="description" content="">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
@@ -40,11 +42,6 @@
         <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
         <meta name="msapplication-TileColor" content="#222222">
 
-        <!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page -->
-        <!--
-        <link rel="canonical" href="http://www.example.com/" >
-        -->
-
         <!-- Add to homescreen for Chrome on Android -->
         <!--
         <meta name="mobile-web-app-capable" content="yes">
@@ -57,11 +54,6 @@
         <meta name="apple-mobile-web-app-title" content="">
         -->
 
-        <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
-        <!--
-        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
-        -->
-
         <link rel="stylesheet" href="/css/main.less.css">
         <script src="/bower_components/modernizr/modernizr.js"></script>
     </head>
@@ -71,23 +63,13 @@
         <div class="andrz-bg-overlay"></div>
 
 
-        <!--
-        <header role="banner">
-          <div class="container-fluid">
-            <button type="button" class="">
-              MENU <span class="glyphicon glyphicon-hamburger-menu"></span>
-            </button>
-          </div>
-        </header>
-        -->
-
         <div class="andrz-nav-anim">
 
           <div class="andrz-nonnav">
-            <button type="button" class="andrz-nav-toggle">
+            <a class="andrz-nav-toggle">
               <span class="andrz-nav-toggle-icon andrz-nav-toggle-closed glyphicon glyphicon-menu-hamburger"></span>
-              <span class="andrz-nav-toggle-icon andrz-nav-toggle-opened glyphicon glyphicon-remove"></span>
-            </button>
+              <span class="andrz-nav-toggle-icon andrz-nav-toggle-opened glyphicon glyphicon-chevron-right"></span>
+            </a>
 
             <div class="container-fluid andrz-container-main">
               <main>
@@ -98,16 +80,12 @@
 
           <nav class="andrz-nav">
 
-            <ul class="list-unstyled" role="menu">
+            <ul class="list-unstyled andrz-nav-list" role="menu">
               {{#each social}}
-                <li>
-                  <a href="{{url}}" target="_blank" class="media">
-                    <div class="media-left">
-                      <span class="fa fa-{{icon}}"></span>
-                    </div>
-                    <div class="media-body">
-                      {{name}}
-                    </div>
+                <li class="andrz-nav-list-item nav nav-list">
+                  <a href="{{url}}" target="_blank" class="media andrz-nav-link">
+                    <span class="andrz-nav-link-icon fa fa-{{icon}}"></span>
+                    <span class="andrz-nav-link-text">{{name}}</span>
                   </a>
                 </li>
               {{/each}}

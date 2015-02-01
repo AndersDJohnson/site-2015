@@ -5,7 +5,8 @@ $(function () {
   // settings
 
   var navHoverEnabled = true;
-  var timeout = 250;
+  var navOpenTimeout = 250;
+  var navCloseTimeout = 600;
 
   //// selectors
 
@@ -24,15 +25,15 @@ $(function () {
     $navRoot.removeClass('andrz-nav-opened');
 
     if (navHoverEnabled) {
-      $nonNav.off('mouseenter', navCloseTimeout);
+      $nonNav.off('mouseenter', navCloseAfterTimeout);
       $nonNav.off('mouseleave', navCloseCancel);
     }
 
     return false;
   };
 
-  var navCloseTimeout = function (e) {
-    $(this).doTimeout('nav-close', timeout, function () {
+  var navCloseAfterTimeout = function (e) {
+    $(this).doTimeout('nav-close', navCloseTimeout, function () {
       navClose(e);
     });
 
@@ -49,15 +50,15 @@ $(function () {
     $navRoot.addClass('andrz-nav-opened');
 
     if (navHoverEnabled) {
-      $nonNav.on('mouseenter', navCloseTimeout);
+      $nonNav.on('mouseenter', navCloseAfterTimeout);
       $nonNav.on('mouseleave', navCloseCancel);
     }
 
     return false;
   };
 
-  var navOpenTimeout = function (e) {
-    $(this).doTimeout('nav-open', timeout, navOpen);
+  var navOpenAfterTimeout = function (e) {
+    $(this).doTimeout('nav-open', navOpenTimeout, navOpen);
 
     return false;
   };
@@ -83,12 +84,12 @@ $(function () {
     }
   };
 
-  var navToggleTimeout = function (e) {
+  var navToggleAfterTimeout = function (e) {
     if (navIsOpen()) {
-      navCloseTimeout();
+      navCloseAfterTimeout(e);
     }
     else {
-      navOpenTimeout();
+      navOpenAfterTimeout(e);
     }
 
     return false;
@@ -110,7 +111,7 @@ $(function () {
   //// hover
 
   if (navHoverEnabled) {
-    $navToggle.on('mouseenter', navToggleTimeout);
+    $navToggle.on('mouseenter', navToggleAfterTimeout);
     $navToggle.on('mouseleave', navToggleCancel);
   }
 
