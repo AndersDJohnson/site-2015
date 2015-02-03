@@ -82,12 +82,12 @@ body {
   top: 0;
   padding-top: @andrz-nav-toggle-pad;
 
-  html.andrz-uses-nav-left & {
+  .andrz-nav-root.andrz-uses-nav-left & {
     left: 0;
     padding-left: @andrz-nav-toggle-pad;
     padding-right: 0;
   }
-  html.andrz-uses-nav-right & {
+  .andrz-nav-root.andrz-uses-nav-right & {
     right: 0;
     padding-right: @andrz-nav-toggle-pad;
     padding-left: 0;
@@ -130,7 +130,7 @@ body {
   .animated;
   .rotateOut;
 
-  html.andrz-nav-opened & {
+  .andrz-nav-root.andrz-nav-opened & {
     .rotateIn;
   }
 }
@@ -141,12 +141,12 @@ body {
   .animated;
   .rotateIn;
 
-  html.andrz-nav-opened & {
+  .andrz-nav-root.andrz-nav-opened & {
     .rotateOut;
   }
 }
 
-html.andrz-nav-opened {
+.andrz-nav-root.andrz-nav-opened {
   .andrz-nav-toggle-opened {
     display: block;
   }
@@ -156,7 +156,7 @@ html.andrz-nav-opened {
 }
 
 
-html.andrz-uses-nav {
+.andrz-nav-root.andrz-uses-nav {
   height: 100%;
   body {
     overflow-x: hidden;
@@ -168,15 +168,15 @@ html.andrz-uses-nav {
   min-height: 100%;
   position: relative;
 
-  html.andrz-uses-nav-page-shift & {
+  .andrz-nav-root.andrz-uses-nav-page-shift & {
     left: 0;
     transition: left 0.5s;
   }
 
-  html.andrz-uses-nav-page-shift.andrz-uses-nav-right.andrz-nav-opened & {
+  .andrz-nav-root.andrz-uses-nav-page-shift.andrz-uses-nav-right.andrz-nav-opened & {
     left: -1 * @andrz-nav-width;
   }
-  html.andrz-uses-nav-page-shift.andrz-uses-nav-left.andrz-nav-opened & {
+  .andrz-nav-root.andrz-uses-nav-page-shift.andrz-uses-nav-left.andrz-nav-opened & {
     left: @andrz-nav-width;
   }
 }
@@ -196,16 +196,16 @@ html.andrz-uses-nav {
 
   transition: left 0.5s, right 0.5s;
 
-  html.andrz-uses-nav-left & {
+  .andrz-nav-root.andrz-uses-nav-left & {
     left: -1 * @andrz-nav-width;
   }
-  html.andrz-uses-nav-left.andrz-nav-opened & {
+  .andrz-nav-root.andrz-uses-nav-left.andrz-nav-opened & {
     left: 0;
   }
-  html.andrz-uses-nav-right & {
+  .andrz-nav-root.andrz-uses-nav-right & {
     right: -1 * @andrz-nav-width;
   }
-  html.andrz-uses-nav-right.andrz-nav-opened & {
+  .andrz-nav-root.andrz-uses-nav-right.andrz-nav-opened & {
     right: 0;
   }
 }
@@ -239,10 +239,10 @@ html.andrz-uses-nav {
   }
 
   .andrz-nav--invisible & {
-    html.andrz-uses-nav-right & {
+    .andrz-nav-root.andrz-uses-nav-right & {
       text-align: right;
     }
-    html.andrz-uses-nav-left & {
+    .andrz-nav-root.andrz-uses-nav-left & {
       text-align: left;
     }
   }
@@ -286,7 +286,7 @@ html.andrz-uses-nav {
   text-align: center;
   color: white;
 
-  html.andrz-page-home & {
+  .andrz-nav-root.andrz-page-home & {
     height: 100%;
   }
 }
