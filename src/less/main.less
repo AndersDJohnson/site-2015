@@ -103,7 +103,7 @@ body {
 
 .andrz-nav-toggle {
   position: fixed;
-  z-index: 10;
+  z-index: @andrz-nav-toggle-z-index;
 
 }
 
@@ -167,14 +167,16 @@ html.andrz-uses-nav {
   height: 100%;
   min-height: 100%;
   position: relative;
-  left: 0;
 
-  transition: left 0.5s;
+  html.andrz-uses-nav-page-shift & {
+    left: 0;
+    transition: left 0.5s;
+  }
 
-  html.andrz-uses-nav-right.andrz-nav-opened & {
+  html.andrz-uses-nav-page-shift.andrz-uses-nav-right.andrz-nav-opened & {
     left: -1 * @andrz-nav-width;
   }
-  html.andrz-uses-nav-left.andrz-nav-opened & {
+  html.andrz-uses-nav-page-shift.andrz-uses-nav-left.andrz-nav-opened & {
     left: @andrz-nav-width;
   }
 }
@@ -187,6 +189,7 @@ html.andrz-uses-nav {
   position: fixed;
   top: 0;
   bottom: 0;
+  z-index: @andrz-nav-z-index;
 
   padding: (40px + 16px) 0;
   width: @andrz-nav-width;
@@ -294,6 +297,8 @@ html.andrz-uses-nav {
   width: 400px;
   max-width: 100%;
 
+  text-shadow: 0 0 4px rgba(0,0,0,0.8);
+
   &:hover {
     .animated;
     // .tada;
@@ -335,7 +340,6 @@ html.andrz-uses-nav {
 // }
 
 .andrz-masthead-heading {
-  text-shadow: 0 0 4px rgba(0,0,0,0.8);
 }
 
 
