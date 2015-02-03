@@ -49,7 +49,7 @@ $(function () {
   };
 
   var navCloseAfterTimeout = function (e) {
-    $(this).doTimeout('nav-close', navCloseTimeout, function () {
+    $navRoot.doTimeout('nav-close', navCloseTimeout, function () {
       var $target = $(e.target);
 
       // if mousemove is on toggle or its children, which might be non-nav,
@@ -65,7 +65,7 @@ $(function () {
   };
 
   var navCloseCancel = function (e) {
-    $(this).doTimeout('nav-close');
+    $navRoot.doTimeout('nav-close');
   };
 
   //// open
@@ -91,13 +91,13 @@ $(function () {
   };
 
   var navOpenAfterTimeout = function (e) {
-    $(this).doTimeout('nav-open', navOpenTimeout, navOpen);
+    $navRoot.doTimeout('nav-open', navOpenTimeout, navOpen);
 
     return false;
   };
 
   var navOpenCancel = function (e) {
-    $(this).doTimeout('nav-open');
+    $navRoot.doTimeout('nav-open');
 
     return false;
   };
