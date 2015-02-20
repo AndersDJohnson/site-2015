@@ -82,7 +82,8 @@ module.exports = function (grunt) {
       dev: {
         files: [
           'Gruntfile.js',
-          'src/**/*'
+          'src/**/*',
+          'public/bower_components/**/*.{css,less,js}',
         ],
         tasks: ['dev']
       }
