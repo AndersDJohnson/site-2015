@@ -15,8 +15,8 @@ lang="en">
         <meta name="MobileOptimized" content="320">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="{{assets}}css/main.less.css">
-        <script src="{{assets}}bower_components/modernizr/modernizr.js"></script>
+        <link rel="stylesheet" href="{{root}}css/main.less.css">
+        <script src="{{root}}bower_components/modernizr/modernizr.js"></script>
     </head>
     <body>
 
@@ -38,7 +38,7 @@ lang="en">
             <ul class="list-unstyled andrz-nav-list" role="menu">
               {{#each nav}}
                 <li class="andrz-nav-list-item nav nav-list">
-                  <a href="{{url}}" class="andrz-nav-link">
+                  <a href="{{#unless relative}}{{root}}{{/unless}}{{url}}" class="andrz-nav-link">
                     <span class="andrz-nav-link-icon fa fa-{{icon}}"></span>
                     <span class="andrz-nav-link-text">{{name}}</span>
                   </a>
@@ -49,7 +49,7 @@ lang="en">
               </li>
               {{#each social}}
                 <li class="andrz-nav-list-item nav nav-list">
-                  <a href="{{url}}" target="_blank" class="andrz-nav-link">
+                  <a href="{{#unless relative}}{{root}}{{/unless}}{{url}}" target="_blank" class="andrz-nav-link">
                     <span class="andrz-nav-link-icon fa fa-{{icon}}"></span>
                     <span class="andrz-nav-link-text">{{name}}</span>
                   </a>
@@ -74,12 +74,12 @@ lang="en">
         </div>
 
 
-        <script src="{{assets}}bower_components/jquery/dist/jquery.js"></script>
-        <script src="{{assets}}bower_components/jquery-dotimeout/jquery.ba-dotimeout.js"></script>
-        <script src="{{assets}}bower_components/jquery-hoverIntent/jquery.hoverIntent.js"></script>
-        <script src="{{assets}}bower_components/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="{{assets}}bower_components/css-preload/src/css-preload.js"></script>
-        <script src="{{assets}}js/index.js"></script>
+        <script src="{{root}}bower_components/jquery/dist/jquery.js"></script>
+        <script src="{{root}}bower_components/jquery-dotimeout/jquery.ba-dotimeout.js"></script>
+        <script src="{{root}}bower_components/jquery-hoverIntent/jquery.hoverIntent.js"></script>
+        <script src="{{root}}bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="{{root}}bower_components/css-preload/src/css-preload.js"></script>
+        <script src="{{root}}js/index.js"></script>
 
         {{#isnt config.env 'prod'}}<!--{{/isnt}}
         <script>

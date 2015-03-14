@@ -1,20 +1,25 @@
 home:
   name: Home
-  url: /
+  url: 
+  relative: true
   icon: home
 profile:
   name: Profile
-  url: /profile/
+  url: profile
+  relative: true
   icon: user
 blog:
   name: Blog
-  url: /blog/
+  url: blog
+  relative: true
   icon: pencil
 work:
   name: Work
-  url: /work/
+  url: work
+  relative: true
   icon: book
 resume:
   name: Résumé
-  url: /resume/
+  url: resume
+  relative: true
   icon: briefcase

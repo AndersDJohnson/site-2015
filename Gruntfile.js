@@ -83,7 +83,7 @@ module.exports = function (grunt) {
       },
       dev: {
         options: {
-          assets: './',
+          root: '/',
           config: {
             env: 'dev'
           }
@@ -92,7 +92,7 @@ module.exports = function (grunt) {
       },
       prodPreview: {
         options: {
-          assets: './',
+          root: '/',
           config: {
             env: 'prod'
           }
@@ -101,7 +101,7 @@ module.exports = function (grunt) {
       },
       prod: {
         options: {
-          assets: './site-2015/',
+          root: '/site-2015/',
           config: {
             env: 'prod'
           }
