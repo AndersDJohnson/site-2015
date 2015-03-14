@@ -44,7 +44,8 @@ module.exports = function (grunt) {
           ],
           data: [ 'src/data/**/*.{json,yml}' ],
           layout: 'layout-default.hbs.html',
-          layoutdir: 'src/layouts'
+          layoutdir: 'src/layouts',
+          assets: './'
         },
         files: [{
           expand: true,

@@ -57,8 +57,8 @@ lang="en">
         <meta name="apple-mobile-web-app-title" content="">
         -->
 
-        <link rel="stylesheet" href="/css/main.less.css">
-        <script src="/bower_components/modernizr/modernizr.js"></script>
+        <link rel="stylesheet" href="{{assets}}css/main.less.css">
+        <script src="{{assets}}bower_components/modernizr/modernizr.js"></script>
     </head>
     <body>
 
@@ -116,13 +116,14 @@ lang="en">
         </div>
 
 
-        <script src="/bower_components/jquery/dist/jquery.js"></script>
-        <script src="/bower_components/jquery-dotimeout/jquery.ba-dotimeout.js"></script>
-        <script src="/bower_components/jquery-hoverIntent/jquery.hoverIntent.js"></script>
-        <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="/bower_components/css-preload/src/css-preload.js"></script>
-        <script src="/js/index.js"></script>
+        <script src="{{assets}}bower_components/jquery/dist/jquery.js"></script>
+        <script src="{{assets}}bower_components/jquery-dotimeout/jquery.ba-dotimeout.js"></script>
+        <script src="{{assets}}bower_components/jquery-hoverIntent/jquery.hoverIntent.js"></script>
+        <script src="{{assets}}bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="{{assets}}bower_components/css-preload/src/css-preload.js"></script>
+        <script src="{{assets}}js/index.js"></script>
 
+        <!-- TODO: enable prod build -->
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <!--
         <script>
@@ -135,6 +136,7 @@ lang="en">
         </script>
         -->
 
+        <!-- TODO: dev build only -->
         <script src="http://localhost:35729/livereload.js"></script>
     </body>
 </html>
