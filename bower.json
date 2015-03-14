@@ -17,6 +17,6 @@
     "font-awesome": "~4.3.0",
     "jquery-hoverIntent": "~1.8.1",
     "jquery-dotimeout": "*",
-    "css-preload": "~0.1.0"
+    "css-preload": "~0.1.1"
   }
 }
