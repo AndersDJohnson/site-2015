@@ -38,7 +38,7 @@ lang="en">
             <ul class="list-unstyled andrz-nav-list" role="menu">
               {{#each nav}}
                 <li class="andrz-nav-list-item nav nav-list">
-                  <a href="{{#unless relative}}{{root}}{{/unless}}{{url}}" class="andrz-nav-link">
+                  <a href="{{#if relative}}{{../../root}}{{/if}}{{url}}" class="andrz-nav-link">
                     <span class="andrz-nav-link-icon fa fa-{{icon}}"></span>
                     <span class="andrz-nav-link-text">{{name}}</span>
                   </a>
@@ -49,7 +49,7 @@ lang="en">
               </li>
               {{#each social}}
                 <li class="andrz-nav-list-item nav nav-list">
-                  <a href="{{#unless relative}}{{root}}{{/unless}}{{url}}" target="_blank" class="andrz-nav-link">
+                  <a href="{{#if relative}}{{../../root}}{{/if}}{{url}}" target="_blank" class="andrz-nav-link">
                     <span class="andrz-nav-link-icon fa fa-{{icon}}"></span>
                     <span class="andrz-nav-link-text">{{name}}</span>
                   </a>
