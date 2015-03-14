@@ -1,0 +1,40 @@
+{
+  "name": "css-preload",
+  "version": "0.1.0",
+  "homepage": "https://github.com/AndersDJohnson/css-preload",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AndersDJohnson/css-preload.git"
+  },
+  "authors": [
+    "Anders D. Johnson"
+  ],
+  "main": [
+    "src/css-preload.css",
+    "src/css-preload.js"
+  ],
+  "keywords": [
+    "css",
+    "preload",
+    "load",
+    "css-tricks",
+    "animations"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.0",
+    "commit": "c20da6f9eef6c946a65eeb81efc97e916201d7e8"
+  },
+  "_source": "git://github.com/AndersDJohnson/css-preload.git",
+  "_target": "~0.1.0",
+  "_originalSource": "css-preload"
+}
