@@ -17,6 +17,12 @@ module.exports = function (grunt) {
     'copy:common'
   ]);
 
+  grunt.registerTask('prodPreview', [
+    'assemble:prodPreview',
+    'less:common',
+    'copy:common'
+  ]);
+
   var gruntConfig = {
 
     conf: {
@@ -73,19 +79,29 @@ module.exports = function (grunt) {
         ],
         data: [ 'src/data/**/*.{json,yml}' ],
         layout: 'layout-default.hbs.html',
-        layoutdir: 'src/layouts',
-        assets: './'
+        layoutdir: 'src/layouts'
       },
       dev: {
         options: {
+          assets: './',
           config: {
             env: 'dev'
           }
         },
         files: '<%= conf.assemble.common.files %>'
       },
+      prodPreview: {
+        options: {
+          assets: './',
+          config: {
+            env: 'prod'
+          }
+        },
+        files: '<%= conf.assemble.common.files %>'
+      },
       prod: {
         options: {
+          assets: './site-2015/',
           config: {
             env: 'prod'
           }
