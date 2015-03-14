@@ -7,60 +7,95 @@ module.exports = function (grunt) {
 
   grunt.registerTask('dev', [
     'assemble:dev',
-    'less:dev',
-    'copy:dev'
+    'less:common',
+    'copy:common'
   ]);
 
-  grunt.initConfig({
+  grunt.registerTask('prod', [
+    'assemble:prod',
+    'less:common',
+    'copy:common'
+  ]);
+
+  var gruntConfig = {
+
+    conf: {
+      less: {
+        common: {
+          files: [
+            {
+              expand: true,
+              cwd: 'src/less',
+              src: '**/*.less',
+              dest: 'public/css',
+              ext: '.less.css'
+            }
+          ]
+        }
+      },
+      assemble: {
+        common: {
+          files: [
+            {
+              expand: true,
+              cwd: 'src/pages',
+              src: [
+                '**/*.hbs.html'
+              ],
+              dest: 'public',
+              ext: '.html'
+            }
+          ]
+        }
+      }
+    },
 
     less: {
-      dev: {
-        options: {
-          // sourceMap: true,
-          // sourceMapRootpath: './apples/',
-          // outputSourceFiles: true,
-          dumpLineNumbers: 'all',
-          ieCompat: true
-        },
-        files: [
-          {
-            expand: true,
-            cwd: 'src/less',
-            src: '**/*.less',
-            dest: 'public/css',
-            ext: '.less.css'
-          }
-        ]
+      options: {
+        // sourceMap: true,
+        // sourceMapRootpath: './apples/',
+        // outputSourceFiles: true,
+        dumpLineNumbers: 'all',
+        ieCompat: true
+      },
+      common: {
+        options: {},
+        files: '<%= conf.less.common.files %>'
       }
     },
 
     assemble: {
+      options: {
+        helpers: [ 'src/helpers/**/*.js' ],
+        partials: [
+          'src/partials/**/*.hbs.html',
+          'src/layouts/**/*.hbs.html'
+        ],
+        data: [ 'src/data/**/*.{json,yml}' ],
+        layout: 'layout-default.hbs.html',
+        layoutdir: 'src/layouts',
+        assets: './'
+      },
       dev: {
         options: {
-          helpers: [ 'src/helpers/**/*.js' ],
-          partials: [
-            'src/partials/**/*.hbs.html',
-            'src/layouts/**/*.hbs.html'
-          ],
-          data: [ 'src/data/**/*.{json,yml}' ],
-          layout: 'layout-default.hbs.html',
-          layoutdir: 'src/layouts',
-          assets: './'
+          config: {
+            env: 'dev'
+          }
         },
-        files: [{
-          expand: true,
-          cwd: 'src/pages',
-          src: [
-            '**/*.hbs.html'
-          ],
-          dest: 'public',
-          ext: '.html'
-        }]
+        files: '<%= conf.assemble.common.files %>'
+      },
+      prod: {
+        options: {
+          config: {
+            env: 'prod'
+          }
+        },
+        files: '<%= conf.assemble.common.files %>'
       }
     },
 
     copy: {
-      dev: {
+      common: {
         files: [
           {
             expand: true,
@@ -100,6 +135,9 @@ module.exports = function (grunt) {
       }
     }
 
-  });
+  };
+
+
+  grunt.initConfig(gruntConfig);
 
 };
