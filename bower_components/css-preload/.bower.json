@@ -1,6 +1,6 @@
 {
   "name": "css-preload",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/AndersDJohnson/css-preload",
   "repository": {
     "type": "git",
@@ -28,13 +28,13 @@
     "test",
     "tests"
   ],
-  "_release": "0.1.1",
+  "_release": "0.1.2",
   "_resolution": {
     "type": "version",
-    "tag": "v0.1.1",
-    "commit": "04967c3f91765420c9d4be5f23e15867e4cef9f6"
+    "tag": "v0.1.2",
+    "commit": "202bbd635565785ed86fbc80f118413ee79ed083"
   },
   "_source": "git://github.com/AndersDJohnson/css-preload.git",
-  "_target": "~0.1.0",
+  "_target": "~0.1.2",
   "_originalSource": "css-preload"
 }

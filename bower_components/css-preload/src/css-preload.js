@@ -17,12 +17,19 @@
 
   var cssPreload = {};
 
-  cssPreload.onLoaded = function() {
-    $([document.documentElement, document.body]).removeClass("css-preload");
+  var $el = $(document.documentElement);
+
+  var onLoaded = function() {
+    $el.removeClass("css-preload");
   };
 
-  $(window).load(cssPreload.onLoaded);
+  if (! $el.hasClass('css-preload--manual')) {
+    $(window).load(onLoaded);
+    $(onLoaded);
+  }
+
+  cssPreload.$el = $el;
+  cssPreload.onLoaded = onLoaded;
 
   return cssPreload;
-
 }));
