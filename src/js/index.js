@@ -16,13 +16,13 @@ $(function () {
   var navSelector = '.andrz-nav';
   var nonNavSelector = '.andrz-nonnav';
   var navToggleSelector = '.andrz-nav-toggle';
-  var navCloseSelector = '.andrz-nav-close';
+  var navToggleIconsSelector = '.andrz-nav-toggle-icon';
 
   var $navRoot =$('html');
   var $nav = $(navSelector);
   var $nonNav = $(nonNavSelector);
   var $navToggle = $(navToggleSelector);
-  var $navClose = $(navCloseSelector);
+  var $navToggleIcons = $(navToggleIconsSelector);
 
   var lastStartTime;
 
@@ -30,7 +30,13 @@ $(function () {
 
   //// close
 
+  var navToggleCommon = function (e) {
+    $navToggleIcons.removeClass('no-css-animation');
+  };
+
   var navClose = function (e) {
+    navToggleCommon(e);
+
     var thisTime = (new Date()).getTime();
     if (lastStartTime && lastStartTime + blockTime > thisTime ) {
       return;
@@ -71,6 +77,8 @@ $(function () {
   //// open
 
   var navOpen = function (e) {
+    navToggleCommon(e);
+
     var thisTime = (new Date()).getTime();
     if (lastStartTime && lastStartTime + blockTime > thisTime ) {
       return;
@@ -169,12 +177,6 @@ $(function () {
 
   $navToggle.on('click', function (e) {
     navToggle(e);
-
-    return false;
-  });
-
-  $navClose.on('click', function (e) {
-    navClose(e);
 
     return false;
   });
