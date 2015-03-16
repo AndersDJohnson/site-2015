@@ -1,6 +1,7 @@
 {
   "name": "site-2015",
   "version": "0.1.0",
+  "author": "Anders D. Johnson",
   "private": true,
   "ignore": [
     "**/.*",
