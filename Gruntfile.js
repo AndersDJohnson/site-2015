@@ -8,19 +8,22 @@ module.exports = function (grunt) {
   grunt.registerTask('dev', [
     'assemble:dev',
     'less:common',
-    'copy:common'
+    'copy:common',
+    'autoprefixer:common'
   ]);
 
   grunt.registerTask('prod', [
     'assemble:prod',
     'less:common',
-    'copy:common'
+    'copy:common',
+    'autoprefixer:common'
   ]);
 
   grunt.registerTask('prodPreview', [
     'assemble:prodPreview',
     'less:common',
-    'copy:common'
+    'copy:common',
+    'autoprefixer:common'
   ]);
 
   var gruntConfig = {
@@ -38,6 +41,21 @@ module.exports = function (grunt) {
               ],
               dest: 'public/css',
               ext: '.less.css'
+            }
+          ]
+        }
+      },
+      css: {
+        commonBuilt: {
+          files: [
+            {
+              expand: true,
+              cwd: 'public/css',
+              src: [
+                '**/*.css'
+              ],
+              dest: 'public/css',
+              ext: '.css'
             }
           ]
         }
@@ -71,6 +89,15 @@ module.exports = function (grunt) {
         options: {},
         files: '<%= conf.less.common.files %>'
       }
+    },
+
+    autoprefixer: {
+      options: {
+        
+      },
+      common: {
+        files: '<%= conf.css.commonBuilt.files %>'
+      },
     },
 
     assemble: {

@@ -16,6 +16,7 @@
     "grunt-contrib-less": "^1.0.0",
     "grunt-contrib-watch": "^0.6.1",
     "load-grunt-tasks": "^3.1.0",
-    "lodash": "^3.0.1"
+    "lodash": "^3.0.1",
+    "grunt-autoprefixer": "~2.2.0"
   }
 }
