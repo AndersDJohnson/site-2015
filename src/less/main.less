@@ -170,15 +170,18 @@ body {
   position: relative;
 
   .andrz-nav-root.andrz-uses-nav-page-shift & {
-    left: 0;
-    transition: left 0.5s;
+    // left: 0;
+    transform: translateX(0);
+    transition: left @andrz-nav-toggle-duration;
   }
 
   .andrz-nav-root.andrz-uses-nav-page-shift.andrz-uses-nav-right.andrz-nav-opened & {
-    left: -1 * @andrz-nav-width;
+    // left: -1 * @andrz-nav-width;
+    transform: translateX(-1 * @andrz-nav-width);
   }
   .andrz-nav-root.andrz-uses-nav-page-shift.andrz-uses-nav-left.andrz-nav-opened & {
-    left: @andrz-nav-width;
+    // left: @andrz-nav-width;
+    transform: translateX(@andrz-nav-width);
   }
 }
 
@@ -195,19 +198,24 @@ body {
   padding: (40px + 16px) 0;
   width: @andrz-nav-width;
 
-  transition: left 0.5s, right 0.5s;
+  // transition: left 0.5s, right 0.5s;
+  transition: transform @andrz-nav-toggle-duration;
 
   .andrz-nav-root.andrz-uses-nav-left & {
-    left: -1 * @andrz-nav-width;
+    // left: -1 * @andrz-nav-width;
+    transform: translateX(-1 * @andrz-nav-width);
   }
   .andrz-nav-root.andrz-uses-nav-left.andrz-nav-opened & {
-    left: 0;
+    // left: 0;
+    transform: translateX(0);
   }
   .andrz-nav-root.andrz-uses-nav-right & {
-    right: -1 * @andrz-nav-width;
+    // right: -1 * @andrz-nav-width;
+    transform: translateX(@andrz-nav-width);
   }
   .andrz-nav-root.andrz-uses-nav-right.andrz-nav-opened & {
-    right: 0;
+    // right: 0;
+    transform: translateX(0);
   }
 }
 
