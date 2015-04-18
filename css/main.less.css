@@ -1,31 +1,19 @@
 @charset "UTF-8";
 .css-preload *:not(.no-css-preload) {
   -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
   transition: none !important;
 
   -webkit-animation: none !important;
-  -moz-animation: none !important;
-  -ms-animation: none !important;
-  -o-animation: none !important;
   animation: none !important;
 }
 
 .no-css-transition {
   -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
   transition: none !important;
 }
 
 .no-css-animation {
   -webkit-animation: none !important;
-  -moz-animation: none !important;
-  -ms-animation: none !important;
-  -o-animation: none !important;
   animation: none !important;
 }
 
@@ -161,7 +149,6 @@ figure {
 /* line 211, public\bower_components\bootstrap\less\normalize.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/normalize\.less}line{font-family:\00003211}}
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -245,8 +232,6 @@ input[type="number"]::-webkit-outer-spin-button {
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/normalize\.less}line{font-family:\00003357}}
 input[type="search"] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 /* line 370, public\bower_components\bootstrap\less\normalize.less */
@@ -1732,16 +1717,12 @@ th {
 /* line 11, public\bower_components\bootstrap\less\scaffolding.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/scaffolding\.less}line{font-family:\0000311}}
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 /* line 14, public\bower_components\bootstrap\less\scaffolding.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/scaffolding\.less}line{font-family:\0000314}}
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 /* line 22, public\bower_components\bootstrap\less\scaffolding.less */
@@ -1824,7 +1805,6 @@ img {
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
@@ -3858,8 +3838,6 @@ label {
 /* line 47, public\bower_components\bootstrap\less\forms.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/forms\.less}line{font-family:\0000347}}
 input[type="search"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 /* line 52, public\bower_components\bootstrap\less\forms.less */
@@ -3919,10 +3897,8 @@ output {
   background-image: none;
   border: 1px solid #cccccc;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 /* line 57, public\bower_components\bootstrap\less\mixins\forms.less */
@@ -3930,7 +3906,6 @@ output {
 .form-control:focus {
   border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 /* line 103, public\bower_components\bootstrap\less\mixins\vendor-prefixes.less */
@@ -4265,14 +4240,12 @@ select[multiple].form-group-lg .form-control {
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/mixins\/forms\.less}line{font-family:\0000321}}
 .has-success .form-control {
   border-color: #3c763d;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 /* line 24, public\bower_components\bootstrap\less\mixins\forms.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/mixins\/forms\.less}line{font-family:\0000324}}
 .has-success .form-control:focus {
   border-color: #2b542c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
 }
 /* line 31, public\bower_components\bootstrap\less\mixins\forms.less */
@@ -4305,14 +4278,12 @@ select[multiple].form-group-lg .form-control {
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/mixins\/forms\.less}line{font-family:\0000321}}
 .has-warning .form-control {
   border-color: #8a6d3b;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 /* line 24, public\bower_components\bootstrap\less\mixins\forms.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/mixins\/forms\.less}line{font-family:\0000324}}
 .has-warning .form-control:focus {
   border-color: #66512c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
 }
 /* line 31, public\bower_components\bootstrap\less\mixins\forms.less */
@@ -4345,14 +4316,12 @@ select[multiple].form-group-lg .form-control {
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/mixins\/forms\.less}line{font-family:\0000321}}
 .has-error .form-control {
   border-color: #a94442;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 /* line 24, public\bower_components\bootstrap\less\mixins\forms.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/mixins\/forms\.less}line{font-family:\0000324}}
 .has-error .form-control:focus {
   border-color: #843534;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
 }
 /* line 31, public\bower_components\bootstrap\less\mixins\forms.less */
@@ -4515,7 +4484,8 @@ select[multiple].form-group-lg .form-control {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
@@ -4555,7 +4525,6 @@ select[multiple].form-group-lg .form-control {
 .btn.active {
   outline: 0;
   background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 /* line 46, public\bower_components\bootstrap\less\buttons.less */
@@ -4567,7 +4536,6 @@ fieldset[disabled] .btn {
   pointer-events: none;
   opacity: 0.65;
   filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 /* line 60, public\bower_components\bootstrap\less\buttons.less */
@@ -4915,7 +4883,6 @@ fieldset[disabled] .btn-danger.active {
 .btn-link[disabled],
 fieldset[disabled] .btn-link {
   background-color: transparent;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 /* line 101, public\bower_components\bootstrap\less\buttons.less */
@@ -4993,7 +4960,6 @@ input[type="button"].btn-block {
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
-  -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
 }
 /* line 13, public\bower_components\bootstrap\less\component-animations.less */
@@ -5076,7 +5042,6 @@ tbody.collapse.in {
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
 }
@@ -5338,13 +5303,11 @@ tbody.collapse.in {
 /* line 115, public\bower_components\bootstrap\less\button-groups.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/button-groups\.less}line{font-family:\00003115}}
 .btn-group.open .dropdown-toggle {
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 /* line 119, public\bower_components\bootstrap\less\button-groups.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/button-groups\.less}line{font-family:\00003119}}
 .btn-group.open .dropdown-toggle.btn-link {
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 /* line 126, public\bower_components\bootstrap\less\button-groups.less */
@@ -6226,7 +6189,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 10px 15px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   margin-top: 8px;
   margin-bottom: 8px;
@@ -6325,7 +6287,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-right: 0;
     padding-top: 0;
     padding-bottom: 0;
-    -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
@@ -7118,7 +7079,6 @@ a.badge:focus {
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
-  -o-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
 }
 /* line 17, public\bower_components\bootstrap\less\thumbnails.less */
@@ -7286,7 +7246,6 @@ a.thumbnail.active {
   margin-bottom: 20px;
   background-color: #f5f5f5;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 /* line 36, public\bower_components\bootstrap\less\progress-bars.less */
@@ -7300,10 +7259,8 @@ a.thumbnail.active {
   color: #ffffff;
   text-align: center;
   background-color: #337ab7;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
-  -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
 /* line 54, public\bower_components\bootstrap\less\progress-bars.less */
@@ -7311,7 +7268,6 @@ a.thumbnail.active {
 .progress-striped .progress-bar,
 .progress-bar-striped {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 40px 40px;
 }
@@ -7320,7 +7276,6 @@ a.thumbnail.active {
 .progress.active .progress-bar,
 .progress-bar.active {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
-  -o-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite;
 }
 /* line 73, public\bower_components\bootstrap\less\progress-bars.less */
@@ -7332,7 +7287,6 @@ a.thumbnail.active {
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/mixins\/progress-bar\.less}line{font-family:\000037}}
 .progress-striped .progress-bar-success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 /* line 77, public\bower_components\bootstrap\less\progress-bars.less */
@@ -7344,7 +7298,6 @@ a.thumbnail.active {
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/mixins\/progress-bar\.less}line{font-family:\000037}}
 .progress-striped .progress-bar-info {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 /* line 81, public\bower_components\bootstrap\less\progress-bars.less */
@@ -7356,7 +7309,6 @@ a.thumbnail.active {
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/mixins\/progress-bar\.less}line{font-family:\000037}}
 .progress-striped .progress-bar-warning {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 /* line 85, public\bower_components\bootstrap\less\progress-bars.less */
@@ -7368,7 +7320,6 @@ a.thumbnail.active {
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/mixins\/progress-bar\.less}line{font-family:\000037}}
 .progress-striped .progress-bar-danger {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 /* line 1, public\bower_components\bootstrap\less\media.less */
@@ -7687,7 +7638,6 @@ a.list-group-item-danger.active:focus {
   background-color: #ffffff;
   border: 1px solid transparent;
   border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 /* line 16, public\bower_components\bootstrap\less\panels.less */
@@ -8198,7 +8148,6 @@ a.list-group-item-danger.active:focus {
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 /* line 15, public\bower_components\bootstrap\less\wells.less */
@@ -8274,11 +8223,8 @@ button.close {
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
-  -o-transform: translate(0, -25%);
   transform: translate(0, -25%);
   -webkit-transition: -webkit-transform 0.3s ease-out;
-  -moz-transition: -moz-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
 /* line 36, public\bower_components\bootstrap\less\modals.less */
@@ -8286,7 +8232,6 @@ button.close {
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 /* line 38, public\bower_components\bootstrap\less\modals.less */
@@ -8310,7 +8255,6 @@ button.close {
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
   outline: 0;
@@ -8404,7 +8348,6 @@ button.close {
   /* line 140, public\bower_components\bootstrap\less\modals.less */
   @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/modals\.less}line{font-family:\00003140}}
   .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
   /* line 145, public\bower_components\bootstrap\less\modals.less */
@@ -8575,7 +8518,6 @@ button.close {
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   white-space: normal;
 }
@@ -8730,7 +8672,6 @@ button.close {
   display: none;
   position: relative;
   -webkit-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
 }
 /* line 22, public\bower_components\bootstrap\less\carousel.less */
@@ -8744,14 +8685,10 @@ button.close {
   @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/carousel\.less}line{font-family:\0000329}}
   .carousel-inner > .item {
     -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    -moz-transition: -moz-transform 0.6s ease-in-out;
-    -o-transition: -o-transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out;
     -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-perspective: 1000;
-    -moz-perspective: 1000;
     perspective: 1000;
   }
   /* line 34, public\bower_components\bootstrap\less\carousel.less */
@@ -8845,7 +8782,6 @@ button.close {
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/bootstrap\/less\/carousel\.less}line{font-family:\00003108}}
 .carousel-control.left {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
@@ -8856,7 +8792,6 @@ button.close {
   left: auto;
   right: 0;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
@@ -9436,7 +9371,9 @@ button.close {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 /* makes the font 33% larger relative to the icon container */
 /* line 5, public\bower_components\font-awesome\less\larger.less */
@@ -9612,7 +9549,8 @@ button.close {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 /* line 4, public\bower_components\font-awesome\less\stacked.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/public\/bower_components\/font-awesome\/less\/stacked\.less}line{font-family:\000034}}
@@ -16338,7 +16276,6 @@ Copyright (c) 2015 Daniel Eden
   outline: 0;
   background-image: none;
   background-color: transparent;
-  -webkit-box-shadow: none;
   box-shadow: none;
   font-weight: normal;
   border-radius: 0;
@@ -16348,7 +16285,6 @@ Copyright (c) 2015 Daniel Eden
 @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/_navbar-transparent\.less}line{font-family:\000033}}
 .navbar.navbar-transparent.navbar-inverse {
   border-width: 0px;
-  -webkit-box-shadow: 0px 0px;
   box-shadow: 0px 0px;
   background-color: rgba(0, 0, 0, 0);
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
@@ -16397,7 +16333,8 @@ body {
   background-position: center top;
   background-size: cover;
   background-image: url("https://ununsplash.imgix.net/photo-1413913619092-816734eed3a7?q=75&fm=jpg&s=7653dd05ea22b7546a416b360b9d3bdd");
-  animation: andrz-bg-image 5s;
+  -webkit-animation: andrz-bg-image 5s;
+          animation: andrz-bg-image 5s;
 }
 /* line 47, src/less/main.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000347}}
@@ -16412,7 +16349,20 @@ body {
   position: absolute;
   background-color: #003334;
   opacity: 0.6;
-  animation: andrz-bg-overlay 5s;
+  -webkit-animation: andrz-bg-overlay 5s;
+          animation: andrz-bg-overlay 5s;
+}
+@-webkit-keyframes andrz-bg-overlay {
+  /* line 57, src/less/main.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000357}}
+  0% {
+    opacity: 1;
+  }
+  /* line 58, src/less/main.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000358}}
+  100% {
+    opacity: 0.6;
+  }
 }
 @keyframes andrz-bg-overlay {
   /* line 57, src/less/main.less */
@@ -16424,6 +16374,18 @@ body {
   @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000358}}
   100% {
     opacity: 0.6;
+  }
+}
+@-webkit-keyframes andrz-bg-image {
+  /* line 61, src/less/main.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000361}}
+  0% {
+    -webkit-filter: blur(10px);
+  }
+  /* line 62, src/less/main.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000362}}
+  100% {
+    -webkit-filter: blur(0px);
   }
 }
 @keyframes andrz-bg-image {
@@ -16456,7 +16418,6 @@ body {
   outline: 0;
   background-image: none;
   background-color: transparent;
-  -webkit-box-shadow: none;
   box-shadow: none;
   font-weight: normal;
   border-radius: 0;
@@ -16527,7 +16488,8 @@ body {
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-name: rotateOut;
   animation-name: rotateOut;
 }
@@ -16545,7 +16507,8 @@ body {
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-name: rotateIn;
   animation-name: rotateIn;
 }
@@ -16585,17 +16548,22 @@ body {
 /* line 172, src/less/main.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003172}}
 .andrz-nav-root.andrz-uses-nav-page-shift .andrz-nav-anim {
-  transition: left 0.5s;
+  -webkit-transition: left 0.5s;
+          transition: left 0.5s;
 }
 /* line 177, src/less/main.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003177}}
 .andrz-nav-root.andrz-uses-nav-page-shift.andrz-uses-nav-right.andrz-nav-opened .andrz-nav-anim {
-  transform: translateX(-260px);
+  -webkit-transform: translateX(-260px);
+      -ms-transform: translateX(-260px);
+          transform: translateX(-260px);
 }
 /* line 181, src/less/main.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003181}}
 .andrz-nav-root.andrz-uses-nav-page-shift.andrz-uses-nav-left.andrz-nav-opened .andrz-nav-anim {
-  transform: translateX(260px);
+  -webkit-transform: translateX(260px);
+      -ms-transform: translateX(260px);
+          transform: translateX(260px);
 }
 /* line 187, src/less/main.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003187}}
@@ -16611,7 +16579,8 @@ body {
   z-index: 100;
   padding: 56px 0;
   width: 260px;
-  transition: left 0.5s, right 0.5s;
+  -webkit-transition: left 0.5s, right 0.5s;
+          transition: left 0.5s, right 0.5s;
 }
 /* line 202, src/less/main.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003202}}
@@ -16733,12 +16702,15 @@ body {
   width: 400px;
   max-width: 100%;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
-  transition: transform 250ms;
+  -webkit-transition: -webkit-transform 250ms;
+          transition: transform 250ms;
 }
 /* line 307, src/less/main.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003307}}
 .andrz-masthead-center:hover {
-  transform: scale(1.2) rotate(-4deg) translateY(-24px);
+  -webkit-transform: scale(1.2) rotate(-4deg) translateY(-24px);
+      -ms-transform: scale(1.2) rotate(-4deg) translateY(-24px);
+          transform: scale(1.2) rotate(-4deg) translateY(-24px);
 }
 /* line 316, src/less/main.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003316}}
