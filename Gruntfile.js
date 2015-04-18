@@ -55,7 +55,8 @@ module.exports = function (grunt) {
                 '**/*.css'
               ],
               dest: 'public/css',
-              ext: '.css'
+              ext: '.css',
+              extDot: 'last'
             }
           ]
         }
