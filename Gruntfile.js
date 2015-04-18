@@ -68,7 +68,7 @@ module.exports = function (grunt) {
               expand: true,
               cwd: 'src/pages',
               src: [
-                '**/*.hbs.html'
+                '**/*.hbs'
               ],
               dest: 'public',
               ext: '.html'
@@ -105,11 +105,11 @@ module.exports = function (grunt) {
       options: {
         helpers: [ 'src/helpers/**/*.js' ],
         partials: [
-          'src/partials/**/*.hbs.html',
-          'src/layouts/**/*.hbs.html'
+          'src/partials/**/*.hbs',
+          'src/layouts/**/*.hbs'
         ],
         data: [ 'src/data/**/*.{json,yml}' ],
-        layout: 'layout-default.hbs.html',
+        layout: 'layout-masthead.hbs',
         layoutdir: 'src/layouts'
       },
       dev: {
