@@ -298,16 +298,14 @@ body {
 
   text-shadow: 0 0 4px rgba(0,0,0,0.8);
 
+  transition: transform 250ms;
+
   &:hover {
-    .animated;
-    // .tada;
-    // .flipInX;
-    // .bounceIn;
-    // .rubberBand;
-    // .swing;
-    // .shake;
-    // .bounce;
-    .pulse;
+    transform:
+      scale(1.2)
+      rotate(-4deg)
+      translateY(-24px)
+    ;
   }
 }
 
