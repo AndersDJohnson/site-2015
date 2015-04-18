@@ -9,7 +9,7 @@ $(function () {
   var isHoverOutsideCloseEnabled = true;
   var navOpenTimeout = 250;
   var navCloseTimeout = 600;
-  var blockTime = 750;
+  var blockTime = 500;
 
   //// selectors
 
