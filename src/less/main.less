@@ -84,6 +84,7 @@ body {
   display: block;
   top: 0;
   padding-top: @andrz-nav-toggle-pad;
+  user-select: none;
 
   .andrz-nav-root.andrz-uses-nav-left & {
     left: 0;
@@ -292,6 +293,12 @@ body {
 
 
 .andrz-masthead {
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+
+.andrz-masthead-full {
   position: relative; // for image fill
 
   padding-top: 100px;
@@ -301,27 +308,75 @@ body {
   text-align: center;
   color: white;
 
+  .andrz-masthead-text {
+    text-align: center;
+  }
+  .andrz-masthead-heading {
+    font-size: 36px;
+  }
+  .andrz-masthead-lead {
+    font-size: 22px;
+  }
+  .andrz-masthead-center-wrap {
+    .animated;
+    .bounceInDown;
+  }
+
   .andrz-nav-root.andrz-page--home & {
     height: 100%;
   }
 }
 
+
+.andrz-masthead-slim {
+  @ssp: 4px;
+  @sss: 24px + (16px * 2);
+  @ssh: @sss - (@ssp * 2);
+  @ssw: @ssh;
+
+  color: white;
+
+  .andrz-masthead-center {
+    margin-left: @sss;
+    // height: @sss;
+    padding: 4px 0;
+  }
+  .andrz-masthead-image {
+    width: @ssw;
+    // position: absolute;
+    float: left;
+  }
+  .andrz-masthead-text {
+    margin-left: @ssw + 16px;
+  }
+  .andrz-masthead-heading {
+    font-size: 18px;
+    line-height: @ssh;
+  }
+  .andrz-masthead-lead {
+    display: none;
+  }
+}
+
+
 .andrz-masthead-center {
-  position: relative;
-  margin: auto;
-  width: 400px;
-  max-width: 100%;
+  transition: all 250ms;
 
-  text-shadow: 0 0 4px rgba(0,0,0,0.8);
+  .andrz-masthead-full & {
+    position: relative;
+    margin: auto;
+    width: 400px;
+    max-width: 100%;
+    text-shadow: 0 0 4px rgba(0,0,0,0.8);
+    // transition: transform 250ms;
 
-  transition: transform 250ms;
-
-  &:hover {
-    transform:
-      scale(1.2)
-      rotate(-4deg)
-      translateY(-24px)
-    ;
+    &:hover {
+      transform:
+        scale(1.2)
+        rotate(-4deg)
+        translateY(-24px)
+      ;
+    }
   }
 }
 
@@ -353,11 +408,6 @@ body {
 // }
 
 .andrz-masthead-heading {
-}
-
-
-.andrz-lead {
-  text-align: center;
 }
 
 

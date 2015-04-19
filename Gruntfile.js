@@ -109,7 +109,7 @@ module.exports = function (grunt) {
           'src/layouts/**/*.hbs'
         ],
         data: [ 'src/data/**/*.{json,yml}' ],
-        layout: 'layout-masthead.hbs',
+        layout: 'layout-masthead-slim.hbs',
         layoutdir: 'src/layouts'
       },
       dev: {
