@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -8,52 +6,22 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="180"
-   height="156"
-   viewBox="0 0 180 156"
-   id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="a-penrose-logo.svg">
+   id="svg2"
+   viewBox="0 0 190 165"
+   height="165"
+   width="190">
   <defs
      id="defs4">
     <linearGradient
-       id="linearGradient4150"
-       osb:paint="solid">
+       osb:paint="solid"
+       id="linearGradient4150">
       <stop
-         style="stop-color:#000000;stop-opacity:1;"
+         id="stop4152"
          offset="0"
-         id="stop4152" />
+         style="stop-color:#000000;stop-opacity:1;" />
     </linearGradient>
   </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="3.6203867"
-     inkscape:cx="102.73995"
-     inkscape:cy="79.645628"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:snap-global="true"
-     showguides="false"
-     inkscape:object-paths="true"
-     inkscape:snap-intersection-paths="true"
-     inkscape:object-nodes="true"
-     inkscape:snap-smooth-nodes="true"
-     inkscape:snap-midpoints="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="977"
-     inkscape:window-x="1020"
-     inkscape:window-y="-4"
-     inkscape:window-maximized="1"
-     units="px" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -67,37 +35,20 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:groupmode="layer"
-     id="layer1"
-     inkscape:label="logo 2"
-     style="display:inline">
+     transform="translate(0,-887.36214)"
+     style="display:inline"
+     id="layer2">
     <path
-       style="fill:#c0c0c0;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 78.759766,0.09570312 50.014106,73.966088 11.877184,136.78793 21.746116,144.67524 159.08057,145.21986 180,136.50391 101.3418,0.3359375 Z M 90.050781,58.550781 114.08975,83.92012 l 9.67587,33.10332 -67.533198,-0.008 10.00384,-33.927961 z"
-       id="path4149"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccccccccccc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="logo 3"
-     style="display:inline">
+       id="path7983"
+       d="m 84,923.36214 11.1,19.2 L 73.888918,979.23115 117,977.36214 l 10,20.15178 -63.666634,0 -21.111092,36.56548 147.777726,0 -10.55555,18.2828 -168.98573,-0.2344 z"
+       style="fill:#404040;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
-       style="fill:#404040;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 179.99999,136.50347 -11.25151,19.4882 -157.5212,0 L 0,136.51117 78.760309,0.09572 90.028201,58.588242 44.981828,136.50347 Z"
-       id="path4155"
-       inkscape:connector-curvature="0" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="logo 4"
-     style="display:inline">
+       id="path7985"
+       d="m 52.777825,1015.7967 -10.555551,18.2827 147.777726,0 -84.44442,-146.26205 -21.111101,0 73.985251,128.21425 z"
+       style="fill:#c0c0c0;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
-       style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 78.736328,0.0859375 0,136.51172 11.25,156 45.005859,97.535156 l 67.507811,0 11.25195,19.488284 22.50391,0 L 78.736328,0.0859375 Z M 78.759766,39.070312 101.69922,78.267578 56.255859,78.046875 78.759766,39.070312 Z"
-       id="path4158"
-       inkscape:connector-curvature="0" />
+       id="path7976"
+       d="M 84.444668,887.81777 0,1034.0806 l 10.556068,18.2815 42.222334,-72.90025 63.429608,0 21.11214,36.57045 21.1102,0 z m -6.17e-4,36.56603 21.112139,36.56475 -42.222336,0 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
 </svg>
