@@ -115,6 +115,7 @@ module.exports = function (grunt) {
       dev: {
         options: {
           root: '/',
+          imageRoot: '/img/',
           config: {
             env: 'dev'
           }
@@ -124,6 +125,7 @@ module.exports = function (grunt) {
       prodPreview: {
         options: {
           root: '/',
+          imageRoot: '/img/',
           config: {
             env: 'prod'
           }
@@ -133,6 +135,7 @@ module.exports = function (grunt) {
       prod: {
         options: {
           root: '/site-2015/',
+          imageRoot: '/site-2015/img',
           config: {
             env: 'prod'
           }
@@ -148,7 +151,7 @@ module.exports = function (grunt) {
             expand: true,
             cwd: 'src',
             src: [
-              'images/**/*',
+              'img/**/*',
               'js/**/*'
             ],
             dest: 'public'
