@@ -7,21 +7,21 @@ module.exports = function (grunt) {
 
   grunt.registerTask('dev', [
     'assemble:dev',
-    'less:common',
+    'less:dev',
     'copy:common',
     'autoprefixer:common'
   ]);
 
   grunt.registerTask('prod', [
     'assemble:prod',
-    'less:common',
+    'less:prod',
     'copy:common',
     'autoprefixer:common'
   ]);
 
   grunt.registerTask('prodPreview', [
     'assemble:prodPreview',
-    'less:common',
+    'less:dev',
     'copy:common',
     'autoprefixer:common'
   ]);
@@ -86,8 +86,20 @@ module.exports = function (grunt) {
         dumpLineNumbers: 'all',
         ieCompat: true
       },
-      common: {
-        options: {},
+      dev: {
+        options: {
+          modifyVars: {
+            imageRoot: '"<%= assemble.dev.options.imageRoot %>"'
+          }
+        },
+        files: '<%= conf.less.common.files %>'
+      },
+      prod: {
+        options: {
+          modifyVars: {
+            imageRoot: '"<%= assemble.prod.options.imageRoot %>"'
+          }
+        },
         files: '<%= conf.less.common.files %>'
       }
     },
