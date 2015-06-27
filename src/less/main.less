@@ -80,7 +80,7 @@ body {
     color: white;
   }
   &:hover, &:active {
-    color: gray;
+    color: @andrz-gray;
   }
 
   display: block;
@@ -206,6 +206,11 @@ body {
   // transition: left 0.5s, right 0.5s;
   transition: transform @andrz-nav-toggle-duration;
 
+  hr {
+    margin-left: @andrz-nav-link-padding-horizontal;
+    margin-right: @andrz-nav-link-padding-horizontal;
+  }
+
   .andrz-nav-root.andrz-uses-nav-left & {
     // left: -1 * @andrz-nav-width;
     transform: translateX(-1 * @andrz-nav-width);
@@ -226,10 +231,18 @@ body {
 
 .andrz-nav--glass {
   background: fade(@andrz-bg-color-overlay, 50%);
+
+  hr {
+    border-color: white;
+  }
 }
 
 .andrz-nav--dark {
   background: #1b1b1b;
+
+  hr {
+    border-color: @andrz-gray;
+  }
 }
 
 .andrz-nav-list {
@@ -241,7 +254,7 @@ body {
 
 .andrz-nav-link {
   display: block;
-  padding: 8px 16px;
+  padding: 8px @andrz-nav-link-padding-horizontal;
 
   &, &:link, &:visited, &:hover, &:active {
     color: white;
