@@ -33,6 +33,7 @@ body {
 
   background-position: center top;
   background-size: cover;
+  background-color: @andrz-bg-color-overlay;
   // fish
   // background-image: url("https://unsplash.imgix.net/photo-1418226970361-9f1f7227d638?q=75&w=1080&h=1080&fit=max&fm=jpg&s=7a3e301155d0e1a78e5c1f03420b384e");
   // shore cliff bird's eye
@@ -42,7 +43,7 @@ body {
   // pebbles
   // background-image: url("https://ununsplash.imgix.net/uploads/141202616623001715bb7/c1b3b9b0?q=75&fm=jpg&s=07faf9fb6409579bda59881970b284d1");
   background-image: url('@{imageRoot}bg/like-the-northern-lights/70.jpg');
-  animation: andrz-bg-image 5s;
+  // animation: andrz-bg-image 5s; // blur causes edge fuzziness and anyway isn't visisble on northern lights
 }
 
 .andrz-bg-overlay {
@@ -50,16 +51,16 @@ body {
   .andrz-bg-absolute;
 
   background-color: @andrz-bg-color-overlay;
-  opacity: 0.6;
+  opacity: @andrz-bg-color-overlay-opacity-end;
   animation: andrz-bg-overlay 5s;
 }
 
 @keyframes andrz-bg-overlay {
-  0%   { opacity: 1; }
-  100% { opacity: 0.6; }
+  0%   { opacity: @andrz-bg-color-overlay-opacity-start; }
+  100% { opacity: @andrz-bg-color-overlay-opacity-end; }
 }
 @keyframes andrz-bg-image {
-  0%   { -webkit-filter: blur(10px); }
+  0%   { -webkit-filter: blur(@andrz-bg-blur); }
   100% { -webkit-filter: blur(0px); }
 }
 
