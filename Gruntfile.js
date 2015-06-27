@@ -8,6 +8,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dev', [
     'assemble:dev',
     'less:dev',
+    'clean:common',
     'copy:common',
     'autoprefixer:common'
   ]);
@@ -15,6 +16,7 @@ module.exports = function (grunt) {
   grunt.registerTask('prod', [
     'assemble:prod',
     'less:prod',
+    'clean:common',
     'copy:common',
     'autoprefixer:common'
   ]);
@@ -22,6 +24,7 @@ module.exports = function (grunt) {
   grunt.registerTask('prodPreview', [
     'assemble:prodPreview',
     'less:dev',
+    'clean:common',
     'copy:common',
     'autoprefixer:common'
   ]);
@@ -168,9 +171,12 @@ module.exports = function (grunt) {
             ],
             dest: 'public'
           }
-        ],
-        tasks: ['dev']
+        ]
       }
+    },
+
+    clean: {
+      common: ['public/**/*','!public/bower_components','!public/bower_components/**/*']
     },
 
     watch: {
