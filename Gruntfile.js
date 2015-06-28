@@ -150,7 +150,7 @@ module.exports = function (grunt) {
       prod: {
         options: {
           root: '/site-2015/',
-          imageRoot: '/site-2015/img',
+          imageRoot: '/site-2015/img/',
           config: {
             env: 'prod'
           }
