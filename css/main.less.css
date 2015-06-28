@@ -16332,12 +16332,11 @@ body {
   position: absolute;
   background-position: center top;
   background-size: cover;
-  background-image: url("https://ununsplash.imgix.net/photo-1413913619092-816734eed3a7?q=75&fm=jpg&s=7653dd05ea22b7546a416b360b9d3bdd");
-  -webkit-animation: andrz-bg-image 5s;
-          animation: andrz-bg-image 5s;
+  background-color: #011329;
+  background-image: url('/site-2015/img/bg/like-the-northern-lights/70.jpg');
 }
-/* line 47, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000347}}
+/* line 49, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000349}}
 .andrz-bg-overlay {
   top: 0;
   bottom: 0;
@@ -16347,61 +16346,61 @@ body {
   width: 100%;
   z-index: -1;
   position: absolute;
-  background-color: #003334;
-  opacity: 0.6;
+  background-color: #011329;
+  opacity: 0;
   -webkit-animation: andrz-bg-overlay 5s;
           animation: andrz-bg-overlay 5s;
 }
 @-webkit-keyframes andrz-bg-overlay {
-  /* line 57, src/less/main.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000357}}
+  /* line 59, src/less/main.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000359}}
   0% {
     opacity: 1;
   }
-  /* line 58, src/less/main.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000358}}
+  /* line 60, src/less/main.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000360}}
   100% {
-    opacity: 0.6;
+    opacity: 0;
   }
 }
 @keyframes andrz-bg-overlay {
-  /* line 57, src/less/main.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000357}}
+  /* line 59, src/less/main.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000359}}
   0% {
     opacity: 1;
   }
-  /* line 58, src/less/main.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000358}}
+  /* line 60, src/less/main.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000360}}
   100% {
-    opacity: 0.6;
+    opacity: 0;
   }
 }
 @-webkit-keyframes andrz-bg-image {
-  /* line 61, src/less/main.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000361}}
+  /* line 63, src/less/main.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000363}}
   0% {
     -webkit-filter: blur(10px);
   }
-  /* line 62, src/less/main.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000362}}
+  /* line 64, src/less/main.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000364}}
   100% {
     -webkit-filter: blur(0px);
   }
 }
 @keyframes andrz-bg-image {
-  /* line 61, src/less/main.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000361}}
+  /* line 63, src/less/main.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000363}}
   0% {
     -webkit-filter: blur(10px);
   }
-  /* line 62, src/less/main.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000362}}
+  /* line 64, src/less/main.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000364}}
   100% {
     -webkit-filter: blur(0px);
   }
 }
-/* line 69, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000369}}
+/* line 71, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000371}}
 .andrz-nav-control {
   text-shadow: 0 0 1px black;
   display: block;
@@ -16427,8 +16426,8 @@ body {
   border-radius: 0;
   text-decoration: none;
 }
-/* line 74, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000374}}
+/* line 76, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000376}}
 .andrz-nav-control,
 .andrz-nav-control:link,
 .andrz-nav-control:visited,
@@ -16436,56 +16435,56 @@ body {
 .andrz-nav-control:active {
   text-decoration: none;
 }
-/* line 77, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000377}}
+/* line 79, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000379}}
 .andrz-nav-control,
 .andrz-nav-control:link,
 .andrz-nav-control:visited {
   color: white;
 }
-/* line 80, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000380}}
+/* line 82, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000382}}
 .andrz-nav-control:hover,
 .andrz-nav-control:active {
-  color: gray;
+  color: #808080;
 }
-/* line 89, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000389}}
+/* line 91, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000391}}
 .andrz-nav-root.andrz-uses-nav-left .andrz-nav-control {
   left: 0;
   padding-left: 16px;
   padding-right: 0;
 }
-/* line 94, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000394}}
+/* line 96, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\0000396}}
 .andrz-nav-root.andrz-uses-nav-right .andrz-nav-control {
   right: 0;
   padding-right: 16px;
   padding-left: 0;
 }
-/* line 108, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003108}}
+/* line 110, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003110}}
 .andrz-nav-toggle {
   position: fixed;
   z-index: 110;
 }
-/* line 114, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003114}}
+/* line 116, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003116}}
 .andrz-nav-control-icon {
   font-size: 24px;
   line-height: 24px;
   height: 24px;
   width: 24px;
 }
-/* line 121, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003121}}
+/* line 123, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003123}}
 .andrz-nav-toggle-text {
   font-size: 16px;
   line-height: 24px;
   height: 24px;
 }
-/* line 127, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003127}}
+/* line 129, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003129}}
 .andrz-nav-toggle-opened {
   display: none;
   -webkit-animation-duration: 1s;
@@ -16497,14 +16496,14 @@ body {
   -webkit-animation-name: rotateOut;
   animation-name: rotateOut;
 }
-/* line 134, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003134}}
+/* line 136, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003136}}
 .andrz-nav-root.andrz-nav-opened .andrz-nav-toggle-opened {
   -webkit-animation-name: rotateIn;
   animation-name: rotateIn;
 }
-/* line 139, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003139}}
+/* line 141, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003141}}
 .andrz-nav-toggle-closed {
   display: block;
   -webkit-animation-duration: 1s;
@@ -16516,41 +16515,41 @@ body {
   -webkit-animation-name: rotateIn;
   animation-name: rotateIn;
 }
-/* line 146, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003146}}
+/* line 148, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003148}}
 .andrz-nav-root.andrz-nav-opened .andrz-nav-toggle-closed {
   -webkit-animation-name: rotateOut;
   animation-name: rotateOut;
 }
-/* line 152, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003152}}
+/* line 154, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003154}}
 .andrz-nav-root.andrz-nav-opened .andrz-nav-toggle-opened {
   display: block;
 }
-/* line 155, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003155}}
+/* line 157, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003157}}
 .andrz-nav-root.andrz-nav-opened .andrz-nav-toggle-closed {
   display: none;
 }
-/* line 161, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003161}}
+/* line 163, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003163}}
 .andrz-nav-root.andrz-uses-nav {
   height: 100%;
 }
-/* line 163, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003163}}
+/* line 165, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003165}}
 .andrz-nav-root.andrz-uses-nav body {
   overflow-x: hidden;
 }
-/* line 168, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003168}}
+/* line 170, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003170}}
 .andrz-nav-anim {
   height: 100%;
   min-height: 100%;
   position: relative;
 }
-/* line 173, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003173}}
+/* line 175, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003175}}
 .andrz-nav-root.andrz-uses-nav-page-shift .andrz-nav-anim {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
@@ -16558,27 +16557,27 @@ body {
   -webkit-transition: left 0.5s;
           transition: left 0.5s;
 }
-/* line 179, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003179}}
+/* line 181, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003181}}
 .andrz-nav-root.andrz-uses-nav-page-shift.andrz-uses-nav-right.andrz-nav-opened .andrz-nav-anim {
   -webkit-transform: translateX(-260px);
       -ms-transform: translateX(-260px);
           transform: translateX(-260px);
 }
-/* line 183, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003183}}
+/* line 185, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003185}}
 .andrz-nav-root.andrz-uses-nav-page-shift.andrz-uses-nav-left.andrz-nav-opened .andrz-nav-anim {
   -webkit-transform: translateX(260px);
       -ms-transform: translateX(260px);
           transform: translateX(260px);
 }
-/* line 189, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003189}}
+/* line 191, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003191}}
 .andrz-nonnav {
   height: 100%;
 }
-/* line 193, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003193}}
+/* line 195, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003195}}
 .andrz-nav {
   position: fixed;
   top: 0;
@@ -16590,57 +16589,73 @@ body {
   -webkit-transition: -webkit-transform 0.5s;
           transition: transform 0.5s;
 }
-/* line 207, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003207}}
+/* line 209, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003209}}
+.andrz-nav hr {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+/* line 214, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003214}}
 .andrz-nav-root.andrz-uses-nav-left .andrz-nav {
   -webkit-transform: translateX(-260px);
       -ms-transform: translateX(-260px);
           transform: translateX(-260px);
 }
-/* line 211, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003211}}
+/* line 218, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003218}}
 .andrz-nav-root.andrz-uses-nav-left.andrz-nav-opened .andrz-nav {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
 }
-/* line 215, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003215}}
+/* line 222, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003222}}
 .andrz-nav-root.andrz-uses-nav-right .andrz-nav {
   -webkit-transform: translateX(260px);
       -ms-transform: translateX(260px);
           transform: translateX(260px);
 }
-/* line 219, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003219}}
+/* line 226, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003226}}
 .andrz-nav-root.andrz-uses-nav-right.andrz-nav-opened .andrz-nav {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
 }
-/* line 225, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003225}}
+/* line 232, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003232}}
 .andrz-nav--glass {
-  background: rgba(0, 51, 52, 0.5);
+  background: rgba(1, 19, 41, 0.5);
 }
-/* line 229, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003229}}
-.andrz-nav--dark {
-  background: #222;
-}
-/* line 233, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003233}}
-.andrz-nav-list {
-  padding-right: 0;
+/* line 235, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003235}}
+.andrz-nav--glass hr {
+  border-color: white;
 }
 /* line 240, src/less/main.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003240}}
+.andrz-nav--dark {
+  background: #1b1b1b;
+}
+/* line 243, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003243}}
+.andrz-nav--dark hr {
+  border-color: #808080;
+}
+/* line 248, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003248}}
+.andrz-nav-list {
+  padding-right: 0;
+}
+/* line 255, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003255}}
 .andrz-nav-link {
   display: block;
   padding: 8px 16px;
 }
-/* line 244, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003244}}
+/* line 259, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003259}}
 .andrz-nav-link,
 .andrz-nav-link:link,
 .andrz-nav-link:visited,
@@ -16649,8 +16664,8 @@ body {
   color: white;
   text-decoration: none;
 }
-/* line 250, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003250}}
+/* line 265, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003265}}
 .andrz-nav-link:hover .andrz-nav-link-icon {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -16662,38 +16677,38 @@ body {
   -webkit-animation-name: flipInX;
   animation-name: flipInX;
 }
-/* line 258, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003258}}
+/* line 273, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003273}}
 .andrz-nav-root.andrz-uses-nav-right .andrz-nav--invisible .andrz-nav-link {
   text-align: right;
 }
-/* line 261, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003261}}
+/* line 276, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003276}}
 .andrz-nav-root.andrz-uses-nav-left .andrz-nav--invisible .andrz-nav-link {
   text-align: left;
 }
-/* line 267, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003267}}
+/* line 282, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003282}}
 .andrz-nav--glass .andrz-nav-link:hover,
 .andrz-nav--glass .andrz-nav-link:active {
   background: rgba(0, 0, 0, 0.2);
 }
-/* line 273, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003273}}
+/* line 288, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003288}}
 .andrz-nav--dark .andrz-nav-link:hover,
 .andrz-nav--dark .andrz-nav-link:active {
   background: rgba(0, 0, 0, 0.2);
 }
-/* line 279, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003279}}
+/* line 294, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003294}}
 .andrz-nav-link-icon {
   font-size: 24px;
   line-height: 24px;
   height: 24px;
   width: 24px;
 }
-/* line 286, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003286}}
+/* line 301, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003301}}
 .andrz-nav-link-text {
   font-size: 16px;
   line-height: 24px;
@@ -16701,15 +16716,17 @@ body {
   width: 24px;
   margin: 0 8px;
 }
-/* line 295, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003295}}
+/* line 310, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003310}}
 .andrz-masthead {
   -webkit-transition: all 250ms;
           transition: all 250ms;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
-/* line 301, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003301}}
+/* line 318, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003318}}
 .andrz-masthead-full {
   position: relative;
   padding-top: 100px;
@@ -16717,23 +16734,25 @@ body {
   text-align: center;
   color: white;
 }
-/* line 311, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003311}}
+/* line 328, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003328}}
 .andrz-masthead-full .andrz-masthead-text {
+  margin-top: 8px;
   text-align: center;
 }
-/* line 314, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003314}}
+/* line 332, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003332}}
 .andrz-masthead-full .andrz-masthead-heading {
+  margin: 0;
   font-size: 36px;
 }
-/* line 317, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003317}}
+/* line 336, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003336}}
 .andrz-masthead-full .andrz-masthead-lead {
   font-size: 22px;
 }
-/* line 320, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003320}}
+/* line 339, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003339}}
 .andrz-masthead-full .andrz-masthead-center-wrap {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -16742,52 +16761,52 @@ body {
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
 }
-/* line 325, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003325}}
+/* line 344, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003344}}
 .andrz-nav-root.andrz-page--home .andrz-masthead-full {
   height: 100%;
 }
-/* line 331, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003331}}
+/* line 350, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003350}}
 .andrz-masthead-slim {
   color: white;
 }
-/* line 339, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003339}}
+/* line 358, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003358}}
 .andrz-masthead-slim .andrz-masthead-center {
   margin-left: 56px;
   padding: 4px 0;
 }
-/* line 344, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003344}}
+/* line 363, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003363}}
 .andrz-masthead-slim .andrz-masthead-image {
   width: 48px;
   float: left;
 }
-/* line 349, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003349}}
+/* line 368, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003368}}
 .andrz-masthead-slim .andrz-masthead-text {
   margin-left: 64px;
 }
-/* line 352, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003352}}
+/* line 371, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003371}}
 .andrz-masthead-slim .andrz-masthead-heading {
   font-size: 18px;
   line-height: 48px;
 }
-/* line 356, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003356}}
+/* line 375, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003375}}
 .andrz-masthead-slim .andrz-masthead-lead {
   display: none;
 }
-/* line 362, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003362}}
+/* line 381, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003381}}
 .andrz-masthead-center {
   -webkit-transition: all 250ms;
           transition: all 250ms;
 }
-/* line 365, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003365}}
+/* line 384, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003384}}
 .andrz-masthead-full .andrz-masthead-center {
   position: relative;
   margin: auto;
@@ -16795,32 +16814,36 @@ body {
   max-width: 100%;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
 }
-/* line 373, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003373}}
+/* line 392, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003392}}
 .andrz-masthead-full .andrz-masthead-center:hover {
   -webkit-transform: scale(1.2) rotate(-4deg) translateY(-24px);
       -ms-transform: scale(1.2) rotate(-4deg) translateY(-24px);
           transform: scale(1.2) rotate(-4deg) translateY(-24px);
 }
-/* line 383, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003383}}
+/* line 402, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003402}}
 .andrz-masthead-image {
   position: relative;
 }
-/* line 387, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003387}}
+/* line 406, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003406}}
 .andrz-masthead-logo {
   display: block;
   width: 100%;
 }
-/* line 414, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003414}}
+/* line 432, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003432}}
+.andrz-masthead-profile-image img {
+  border-radius: 50%;
+  width: 160px;
+  height: auto;
+  border: 3px solid white;
+}
+/* line 441, src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003441}}
 .andrz-container-main {
   height: 100%;
-}
-/* line 419, src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/src\/less\/main\.less}line{font-family:\00003419}}
-.andrz-page-body {
-  background: #ffffff;
+  background-color: #ffffff;
   color: #333333;
 }
