@@ -4,8 +4,10 @@ WIP new personal site: http://andrz.me/site-2015/
 
 ## Inspiration
 
-* http://www.code42.com/
-* http://www.mobilize.mn/
-* https://unsplash.com/
+* https://www.code42.com/
+* https://www.mobilize.mn/
+* https://unsplash.com/ (background images)
 * https://www.squarespace.com/
 * http://www.dreamingwithjeff.com/
+* https://terraform.io
+* https://consul.io/
